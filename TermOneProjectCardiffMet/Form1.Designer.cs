@@ -33,6 +33,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.welcomePage = new System.Windows.Forms.TabPage();
             this.webBrowser = new System.Windows.Forms.TabPage();
+            this.browserHistory = new System.Windows.Forms.ListBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnRefresh = new System.Windows.Forms.Button();
@@ -42,7 +43,10 @@
             this.webAddressBox = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.calculator = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ideaBox = new System.Windows.Forms.TextBox();
+            this.btnIdeaGenerator = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnClearSums = new System.Windows.Forms.Button();
             this.calcHistory = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -66,18 +70,21 @@
             this.calcBtn2 = new System.Windows.Forms.Button();
             this.textEditor = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnRandomStyle = new System.Windows.Forms.Button();
+            this.btnWritingPrompt = new System.Windows.Forms.Button();
+            this.richTextBox = new System.Windows.Forms.RichTextBox();
+            this.openFile = new System.Windows.Forms.Button();
+            this.saveBtn = new System.Windows.Forms.Button();
+            this.textColor6 = new System.Windows.Forms.Button();
+            this.textColor5 = new System.Windows.Forms.Button();
+            this.textColor4 = new System.Windows.Forms.Button();
+            this.textColor3 = new System.Windows.Forms.Button();
+            this.textColor2 = new System.Windows.Forms.Button();
+            this.textColor1 = new System.Windows.Forms.Button();
+            this.backColor6 = new System.Windows.Forms.Button();
+            this.backColor5 = new System.Windows.Forms.Button();
+            this.backColor4 = new System.Windows.Forms.Button();
+            this.backColor3 = new System.Windows.Forms.Button();
             this.backColor2 = new System.Windows.Forms.Button();
             this.backColor1 = new System.Windows.Forms.Button();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
@@ -85,16 +92,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.fontList = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.browsingHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1.SuspendLayout();
             this.webBrowser.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -103,22 +106,20 @@
             this.textEditor.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.welcomePage);
             this.tabControl1.Controls.Add(this.webBrowser);
             this.tabControl1.Controls.Add(this.calculator);
             this.tabControl1.Controls.Add(this.textEditor);
-            this.tabControl1.Location = new System.Drawing.Point(2, 43);
+            this.tabControl1.Location = new System.Drawing.Point(2, -2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1765, 851);
+            this.tabControl1.Size = new System.Drawing.Size(1767, 964);
             this.tabControl1.TabIndex = 0;
             // 
             // welcomePage
@@ -126,21 +127,36 @@
             this.welcomePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.welcomePage.Location = new System.Drawing.Point(8, 39);
             this.welcomePage.Name = "welcomePage";
-            this.welcomePage.Size = new System.Drawing.Size(1749, 804);
+            this.welcomePage.Size = new System.Drawing.Size(1751, 917);
             this.welcomePage.TabIndex = 3;
             this.welcomePage.Text = "Welcome";
             // 
             // webBrowser
             // 
+            this.webBrowser.Controls.Add(this.browserHistory);
             this.webBrowser.Controls.Add(this.webBrowser1);
             this.webBrowser.Controls.Add(this.panel1);
+            this.webBrowser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.webBrowser.Location = new System.Drawing.Point(8, 39);
             this.webBrowser.Name = "webBrowser";
             this.webBrowser.Padding = new System.Windows.Forms.Padding(3);
-            this.webBrowser.Size = new System.Drawing.Size(1749, 804);
+            this.webBrowser.Size = new System.Drawing.Size(1751, 917);
             this.webBrowser.TabIndex = 0;
             this.webBrowser.Text = "Browse the web";
             this.webBrowser.UseVisualStyleBackColor = true;
+            // 
+            // browserHistory
+            // 
+            this.browserHistory.FormattingEnabled = true;
+            this.browserHistory.ItemHeight = 37;
+            this.browserHistory.Items.AddRange(new object[] {
+            "https://www.ecosia.org/"});
+            this.browserHistory.Location = new System.Drawing.Point(1236, 90);
+            this.browserHistory.Name = "browserHistory";
+            this.browserHistory.Size = new System.Drawing.Size(350, 448);
+            this.browserHistory.TabIndex = 4;
+            this.browserHistory.Visible = false;
+            this.browserHistory.SelectedIndexChanged += new System.EventHandler(this.browserHistory_SelectedIndexChanged);
             // 
             // webBrowser1
             // 
@@ -151,7 +167,7 @@
             this.webBrowser1.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(1605, 689);
+            this.webBrowser1.Size = new System.Drawing.Size(1605, 734);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("https://www.ecosia.org/?c=en", System.UriKind.Absolute);
             // 
@@ -213,6 +229,7 @@
             this.btnHistory.TabIndex = 4;
             this.toolTip.SetToolTip(this.btnHistory, "See your history");
             this.btnHistory.UseVisualStyleBackColor = false;
+            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
             // 
             // btnForward
             // 
@@ -235,10 +252,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.webAddressBox.Location = new System.Drawing.Point(3, 22);
             this.webAddressBox.Name = "webAddressBox";
-            this.webAddressBox.Size = new System.Drawing.Size(1083, 31);
+            this.webAddressBox.Size = new System.Drawing.Size(1083, 45);
             this.webAddressBox.TabIndex = 2;
             this.webAddressBox.Text = "https://www.ecosia.org/";
             this.toolTip.SetToolTip(this.webAddressBox, "Enter web address");
+            this.webAddressBox.Enter += new System.EventHandler(this.btnGo_Click);
+            this.webAddressBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.webAddressBox_KeyDown);
             // 
             // btnBack
             // 
@@ -259,7 +278,10 @@
             // calculator
             // 
             this.calculator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.calculator.Controls.Add(this.button1);
+            this.calculator.Controls.Add(this.ideaBox);
+            this.calculator.Controls.Add(this.btnIdeaGenerator);
+            this.calculator.Controls.Add(this.label8);
+            this.calculator.Controls.Add(this.btnClearSums);
             this.calculator.Controls.Add(this.calcHistory);
             this.calculator.Controls.Add(this.label1);
             this.calculator.Controls.Add(this.label2);
@@ -267,32 +289,66 @@
             this.calculator.Location = new System.Drawing.Point(8, 39);
             this.calculator.Name = "calculator";
             this.calculator.Padding = new System.Windows.Forms.Padding(3);
-            this.calculator.Size = new System.Drawing.Size(1749, 804);
+            this.calculator.Size = new System.Drawing.Size(1751, 917);
             this.calculator.TabIndex = 1;
             this.calculator.Text = "Play with numbers";
             // 
-            // button1
+            // ideaBox
             // 
-            this.button1.BackColor = System.Drawing.Color.LightBlue;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(662, 574);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(232, 53);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Clear sums";
-            this.button1.UseVisualStyleBackColor = false;
+            this.ideaBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ideaBox.Location = new System.Drawing.Point(197, 727);
+            this.ideaBox.Name = "ideaBox";
+            this.ideaBox.Size = new System.Drawing.Size(655, 57);
+            this.ideaBox.TabIndex = 18;
+            // 
+            // btnIdeaGenerator
+            // 
+            this.btnIdeaGenerator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(240)))));
+            this.btnIdeaGenerator.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIdeaGenerator.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.btnIdeaGenerator.Location = new System.Drawing.Point(18, 726);
+            this.btnIdeaGenerator.Name = "btnIdeaGenerator";
+            this.btnIdeaGenerator.Size = new System.Drawing.Size(163, 58);
+            this.btnIdeaGenerator.TabIndex = 20;
+            this.btnIdeaGenerator.Text = "Get Ideas";
+            this.btnIdeaGenerator.UseVisualStyleBackColor = false;
+            this.btnIdeaGenerator.Click += new System.EventHandler(this.btnIdeaGenerator_Click);
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.label8.Location = new System.Drawing.Point(6, 660);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(846, 50);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Click below to get ideas for sums to try:";
+            // 
+            // btnClearSums
+            // 
+            this.btnClearSums.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(240)))));
+            this.btnClearSums.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearSums.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.btnClearSums.Location = new System.Drawing.Point(662, 574);
+            this.btnClearSums.Name = "btnClearSums";
+            this.btnClearSums.Size = new System.Drawing.Size(361, 53);
+            this.btnClearSums.TabIndex = 18;
+            this.btnClearSums.Text = "Clear sums";
+            this.btnClearSums.UseVisualStyleBackColor = false;
+            this.btnClearSums.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // calcHistory
             // 
-            this.calcHistory.BackColor = System.Drawing.Color.DarkBlue;
+            this.calcHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.calcHistory.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcHistory.ForeColor = System.Drawing.Color.White;
-            this.calcHistory.Location = new System.Drawing.Point(662, 197);
+            this.calcHistory.Location = new System.Drawing.Point(662, 191);
             this.calcHistory.Multiline = true;
             this.calcHistory.Name = "calcHistory";
             this.calcHistory.ReadOnly = true;
-            this.calcHistory.Size = new System.Drawing.Size(232, 362);
+            this.calcHistory.Size = new System.Drawing.Size(361, 377);
             this.calcHistory.TabIndex = 8;
             // 
             // label1
@@ -300,7 +356,7 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(923, 87);
@@ -311,8 +367,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(653, 139);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.label2.Location = new System.Drawing.Point(718, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(241, 50);
             this.label2.TabIndex = 5;
@@ -320,7 +376,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.LightBlue;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(240)))));
             this.panel3.Controls.Add(this.calcBtn9);
             this.panel3.Controls.Add(this.calcBtnClear);
             this.panel3.Controls.Add(this.CalcDisplay);
@@ -345,7 +401,7 @@
             // 
             // calcBtn9
             // 
-            this.calcBtn9.BackColor = System.Drawing.Color.DarkBlue;
+            this.calcBtn9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.calcBtn9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn9.ForeColor = System.Drawing.Color.White;
             this.calcBtn9.Location = new System.Drawing.Point(243, 297);
@@ -358,7 +414,7 @@
             // 
             // calcBtnClear
             // 
-            this.calcBtnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.calcBtnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(192)))), ((int)(((byte)(72)))));
             this.calcBtnClear.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtnClear.ForeColor = System.Drawing.Color.Black;
             this.calcBtnClear.Location = new System.Drawing.Point(369, 390);
@@ -379,7 +435,7 @@
             // 
             // calcBtn8
             // 
-            this.calcBtn8.BackColor = System.Drawing.Color.DarkBlue;
+            this.calcBtn8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.calcBtn8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn8.ForeColor = System.Drawing.Color.White;
             this.calcBtn8.Location = new System.Drawing.Point(135, 297);
@@ -392,7 +448,7 @@
             // 
             // calcBtnDivide
             // 
-            this.calcBtnDivide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.calcBtnDivide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(192)))), ((int)(((byte)(72)))));
             this.calcBtnDivide.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtnDivide.ForeColor = System.Drawing.Color.Black;
             this.calcBtnDivide.Location = new System.Drawing.Point(467, 202);
@@ -400,12 +456,13 @@
             this.calcBtnDivide.Size = new System.Drawing.Size(92, 78);
             this.calcBtnDivide.TabIndex = 14;
             this.calcBtnDivide.Text = "÷";
+            this.toolTip.SetToolTip(this.calcBtnDivide, "Divide by the number");
             this.calcBtnDivide.UseVisualStyleBackColor = false;
             this.calcBtnDivide.Click += new System.EventHandler(this.calcBtnDivide_Click);
             // 
             // calcBtnEquals
             // 
-            this.calcBtnEquals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.calcBtnEquals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(192)))), ((int)(((byte)(72)))));
             this.calcBtnEquals.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtnEquals.ForeColor = System.Drawing.Color.Black;
             this.calcBtnEquals.Location = new System.Drawing.Point(369, 297);
@@ -418,7 +475,7 @@
             // 
             // calcBtn7
             // 
-            this.calcBtn7.BackColor = System.Drawing.Color.DarkBlue;
+            this.calcBtn7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.calcBtn7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn7.ForeColor = System.Drawing.Color.White;
             this.calcBtn7.Location = new System.Drawing.Point(26, 297);
@@ -431,7 +488,7 @@
             // 
             // calcBtnMultiply
             // 
-            this.calcBtnMultiply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.calcBtnMultiply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(192)))), ((int)(((byte)(72)))));
             this.calcBtnMultiply.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtnMultiply.ForeColor = System.Drawing.Color.Black;
             this.calcBtnMultiply.Location = new System.Drawing.Point(369, 202);
@@ -439,12 +496,13 @@
             this.calcBtnMultiply.Size = new System.Drawing.Size(92, 78);
             this.calcBtnMultiply.TabIndex = 13;
             this.calcBtnMultiply.Text = "x";
+            this.toolTip.SetToolTip(this.calcBtnMultiply, "Times the numbers together");
             this.calcBtnMultiply.UseVisualStyleBackColor = false;
             this.calcBtnMultiply.Click += new System.EventHandler(this.calcBtnMultiply_Click);
             // 
             // calcBtnMinus
             // 
-            this.calcBtnMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.calcBtnMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(192)))), ((int)(((byte)(72)))));
             this.calcBtnMinus.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtnMinus.ForeColor = System.Drawing.Color.Black;
             this.calcBtnMinus.Location = new System.Drawing.Point(467, 107);
@@ -452,12 +510,13 @@
             this.calcBtnMinus.Size = new System.Drawing.Size(92, 78);
             this.calcBtnMinus.TabIndex = 12;
             this.calcBtnMinus.Text = "-";
+            this.toolTip.SetToolTip(this.calcBtnMinus, "Take the number away");
             this.calcBtnMinus.UseVisualStyleBackColor = false;
             this.calcBtnMinus.Click += new System.EventHandler(this.calcBtnMinus_Click);
             // 
             // calcBtn6
             // 
-            this.calcBtn6.BackColor = System.Drawing.Color.DarkBlue;
+            this.calcBtn6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.calcBtn6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn6.ForeColor = System.Drawing.Color.White;
             this.calcBtn6.Location = new System.Drawing.Point(243, 202);
@@ -470,7 +529,7 @@
             // 
             // calcBtnPlus
             // 
-            this.calcBtnPlus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.calcBtnPlus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(192)))), ((int)(((byte)(72)))));
             this.calcBtnPlus.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtnPlus.ForeColor = System.Drawing.Color.Black;
             this.calcBtnPlus.Location = new System.Drawing.Point(369, 107);
@@ -478,12 +537,13 @@
             this.calcBtnPlus.Size = new System.Drawing.Size(92, 78);
             this.calcBtnPlus.TabIndex = 11;
             this.calcBtnPlus.Text = "+";
+            this.toolTip.SetToolTip(this.calcBtnPlus, "Add the numbers together");
             this.calcBtnPlus.UseVisualStyleBackColor = false;
             this.calcBtnPlus.Click += new System.EventHandler(this.calcBtnPlus_Click);
             // 
             // calcBtn0
             // 
-            this.calcBtn0.BackColor = System.Drawing.Color.DarkBlue;
+            this.calcBtn0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.calcBtn0.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn0.ForeColor = System.Drawing.Color.White;
             this.calcBtn0.Location = new System.Drawing.Point(135, 390);
@@ -496,7 +556,7 @@
             // 
             // calcBtn1
             // 
-            this.calcBtn1.BackColor = System.Drawing.Color.DarkBlue;
+            this.calcBtn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.calcBtn1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn1.ForeColor = System.Drawing.Color.White;
             this.calcBtn1.Location = new System.Drawing.Point(26, 107);
@@ -509,7 +569,7 @@
             // 
             // calcBtn5
             // 
-            this.calcBtn5.BackColor = System.Drawing.Color.DarkBlue;
+            this.calcBtn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.calcBtn5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn5.ForeColor = System.Drawing.Color.White;
             this.calcBtn5.Location = new System.Drawing.Point(135, 202);
@@ -522,7 +582,7 @@
             // 
             // calcBtn4
             // 
-            this.calcBtn4.BackColor = System.Drawing.Color.DarkBlue;
+            this.calcBtn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.calcBtn4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn4.ForeColor = System.Drawing.Color.White;
             this.calcBtn4.Location = new System.Drawing.Point(26, 202);
@@ -535,7 +595,7 @@
             // 
             // calcBtn3
             // 
-            this.calcBtn3.BackColor = System.Drawing.Color.DarkBlue;
+            this.calcBtn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.calcBtn3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn3.ForeColor = System.Drawing.Color.White;
             this.calcBtn3.Location = new System.Drawing.Point(243, 107);
@@ -548,7 +608,7 @@
             // 
             // calcBtn2
             // 
-            this.calcBtn2.BackColor = System.Drawing.Color.DarkBlue;
+            this.calcBtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.calcBtn2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn2.ForeColor = System.Drawing.Color.White;
             this.calcBtn2.Location = new System.Drawing.Point(135, 107);
@@ -566,26 +626,27 @@
             this.textEditor.Controls.Add(this.label3);
             this.textEditor.Location = new System.Drawing.Point(8, 39);
             this.textEditor.Name = "textEditor";
-            this.textEditor.Size = new System.Drawing.Size(1749, 804);
+            this.textEditor.Size = new System.Drawing.Size(1751, 917);
             this.textEditor.TabIndex = 2;
             this.textEditor.Text = "Write";
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.button18);
-            this.panel2.Controls.Add(this.button17);
-            this.panel2.Controls.Add(this.button11);
-            this.panel2.Controls.Add(this.button12);
-            this.panel2.Controls.Add(this.button13);
-            this.panel2.Controls.Add(this.button14);
-            this.panel2.Controls.Add(this.button15);
-            this.panel2.Controls.Add(this.button16);
-            this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.btnRandomStyle);
+            this.panel2.Controls.Add(this.btnWritingPrompt);
+            this.panel2.Controls.Add(this.richTextBox);
+            this.panel2.Controls.Add(this.openFile);
+            this.panel2.Controls.Add(this.saveBtn);
+            this.panel2.Controls.Add(this.textColor6);
+            this.panel2.Controls.Add(this.textColor5);
+            this.panel2.Controls.Add(this.textColor4);
+            this.panel2.Controls.Add(this.textColor3);
+            this.panel2.Controls.Add(this.textColor2);
+            this.panel2.Controls.Add(this.textColor1);
+            this.panel2.Controls.Add(this.backColor6);
+            this.panel2.Controls.Add(this.backColor5);
+            this.panel2.Controls.Add(this.backColor4);
+            this.panel2.Controls.Add(this.backColor3);
             this.panel2.Controls.Add(this.backColor2);
             this.panel2.Controls.Add(this.backColor1);
             this.panel2.Controls.Add(this.trackBar1);
@@ -593,120 +654,161 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.listBox1);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(15, 90);
+            this.panel2.Controls.Add(this.fontList);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 87);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1446, 731);
+            this.panel2.Size = new System.Drawing.Size(1751, 830);
             this.panel2.TabIndex = 3;
             // 
-            // button18
+            // btnRandomStyle
             // 
-            this.button18.Location = new System.Drawing.Point(828, 660);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(126, 56);
-            this.button18.TabIndex = 23;
-            this.button18.Text = "Load";
-            this.button18.UseVisualStyleBackColor = true;
+            this.btnRandomStyle.Location = new System.Drawing.Point(432, 660);
+            this.btnRandomStyle.Name = "btnRandomStyle";
+            this.btnRandomStyle.Size = new System.Drawing.Size(126, 56);
+            this.btnRandomStyle.TabIndex = 25;
+            this.btnRandomStyle.Text = "Random";
+            this.btnRandomStyle.UseVisualStyleBackColor = true;
+            this.btnRandomStyle.Click += new System.EventHandler(this.btnRandomStyle_Click);
             // 
-            // button17
+            // btnWritingPrompt
             // 
-            this.button17.Location = new System.Drawing.Point(696, 660);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(126, 56);
-            this.button17.TabIndex = 4;
-            this.button17.Text = "Save";
-            this.button17.UseVisualStyleBackColor = true;
+            this.btnWritingPrompt.Location = new System.Drawing.Point(564, 660);
+            this.btnWritingPrompt.Name = "btnWritingPrompt";
+            this.btnWritingPrompt.Size = new System.Drawing.Size(126, 56);
+            this.btnWritingPrompt.TabIndex = 24;
+            this.btnWritingPrompt.Text = "Get idea";
+            this.btnWritingPrompt.UseVisualStyleBackColor = true;
+            this.btnWritingPrompt.Click += new System.EventHandler(this.btnWritingPrompt_Click);
             // 
-            // button11
+            // richTextBox
             // 
-            this.button11.BackColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(1351, 590);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(67, 54);
-            this.button11.TabIndex = 22;
-            this.button11.UseVisualStyleBackColor = false;
+            this.richTextBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.85F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox.Location = new System.Drawing.Point(5, 13);
+            this.richTextBox.Name = "richTextBox";
+            this.richTextBox.Size = new System.Drawing.Size(966, 644);
+            this.richTextBox.TabIndex = 4;
+            this.richTextBox.Text = "Write something here and change the font, size and colours.";
             // 
-            // button12
+            // openFile
             // 
-            this.button12.BackColor = System.Drawing.Color.Green;
-            this.button12.Location = new System.Drawing.Point(1278, 590);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(67, 54);
-            this.button12.TabIndex = 21;
-            this.button12.UseVisualStyleBackColor = false;
+            this.openFile.Location = new System.Drawing.Point(828, 660);
+            this.openFile.Name = "openFile";
+            this.openFile.Size = new System.Drawing.Size(126, 56);
+            this.openFile.TabIndex = 23;
+            this.openFile.Text = "Open file";
+            this.openFile.UseVisualStyleBackColor = true;
+            this.openFile.Click += new System.EventHandler(this.button18_Click);
             // 
-            // button13
+            // saveBtn
             // 
-            this.button13.BackColor = System.Drawing.Color.Yellow;
-            this.button13.Location = new System.Drawing.Point(1205, 590);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(67, 54);
-            this.button13.TabIndex = 20;
-            this.button13.UseVisualStyleBackColor = false;
+            this.saveBtn.Location = new System.Drawing.Point(696, 660);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(126, 56);
+            this.saveBtn.TabIndex = 4;
+            this.saveBtn.Text = "Save";
+            this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.Button17_Click);
             // 
-            // button14
+            // textColor6
             // 
-            this.button14.BackColor = System.Drawing.Color.Blue;
-            this.button14.Location = new System.Drawing.Point(1132, 590);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(67, 54);
-            this.button14.TabIndex = 19;
-            this.button14.UseVisualStyleBackColor = false;
+            this.textColor6.BackColor = System.Drawing.Color.Black;
+            this.textColor6.Location = new System.Drawing.Point(1351, 590);
+            this.textColor6.Name = "textColor6";
+            this.textColor6.Size = new System.Drawing.Size(67, 54);
+            this.textColor6.TabIndex = 22;
+            this.textColor6.UseVisualStyleBackColor = false;
+            this.textColor6.Click += new System.EventHandler(this.textColor6_Click);
             // 
-            // button15
+            // textColor5
             // 
-            this.button15.BackColor = System.Drawing.Color.Red;
-            this.button15.Location = new System.Drawing.Point(1059, 590);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(67, 54);
-            this.button15.TabIndex = 18;
-            this.button15.UseVisualStyleBackColor = false;
+            this.textColor5.BackColor = System.Drawing.Color.Green;
+            this.textColor5.Location = new System.Drawing.Point(1278, 590);
+            this.textColor5.Name = "textColor5";
+            this.textColor5.Size = new System.Drawing.Size(67, 54);
+            this.textColor5.TabIndex = 21;
+            this.textColor5.UseVisualStyleBackColor = false;
+            this.textColor5.Click += new System.EventHandler(this.textColor5_Click);
             // 
-            // button16
+            // textColor4
             // 
-            this.button16.BackColor = System.Drawing.Color.White;
-            this.button16.Location = new System.Drawing.Point(986, 590);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(67, 54);
-            this.button16.TabIndex = 17;
-            this.button16.UseVisualStyleBackColor = false;
+            this.textColor4.BackColor = System.Drawing.Color.Yellow;
+            this.textColor4.Location = new System.Drawing.Point(1205, 590);
+            this.textColor4.Name = "textColor4";
+            this.textColor4.Size = new System.Drawing.Size(67, 54);
+            this.textColor4.TabIndex = 20;
+            this.textColor4.UseVisualStyleBackColor = false;
+            this.textColor4.Click += new System.EventHandler(this.textColor4_Click);
             // 
-            // button9
+            // textColor3
             // 
-            this.button9.BackColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(1351, 467);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(67, 54);
-            this.button9.TabIndex = 16;
-            this.button9.UseVisualStyleBackColor = false;
+            this.textColor3.BackColor = System.Drawing.Color.Blue;
+            this.textColor3.Location = new System.Drawing.Point(1132, 590);
+            this.textColor3.Name = "textColor3";
+            this.textColor3.Size = new System.Drawing.Size(67, 54);
+            this.textColor3.TabIndex = 19;
+            this.textColor3.UseVisualStyleBackColor = false;
+            this.textColor3.Click += new System.EventHandler(this.textColor3_Click);
             // 
-            // button8
+            // textColor2
             // 
-            this.button8.BackColor = System.Drawing.Color.Green;
-            this.button8.Location = new System.Drawing.Point(1278, 467);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(67, 54);
-            this.button8.TabIndex = 15;
-            this.button8.UseVisualStyleBackColor = false;
+            this.textColor2.BackColor = System.Drawing.Color.Red;
+            this.textColor2.Location = new System.Drawing.Point(1059, 590);
+            this.textColor2.Name = "textColor2";
+            this.textColor2.Size = new System.Drawing.Size(67, 54);
+            this.textColor2.TabIndex = 18;
+            this.textColor2.UseVisualStyleBackColor = false;
+            this.textColor2.Click += new System.EventHandler(this.textColor2_Click);
             // 
-            // button6
+            // textColor1
             // 
-            this.button6.BackColor = System.Drawing.Color.Yellow;
-            this.button6.Location = new System.Drawing.Point(1205, 467);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(67, 54);
-            this.button6.TabIndex = 14;
-            this.button6.UseVisualStyleBackColor = false;
+            this.textColor1.BackColor = System.Drawing.Color.White;
+            this.textColor1.Location = new System.Drawing.Point(986, 590);
+            this.textColor1.Name = "textColor1";
+            this.textColor1.Size = new System.Drawing.Size(67, 54);
+            this.textColor1.TabIndex = 17;
+            this.textColor1.UseVisualStyleBackColor = false;
+            this.textColor1.Click += new System.EventHandler(this.textColor1_Click);
             // 
-            // button5
+            // backColor6
             // 
-            this.button5.BackColor = System.Drawing.Color.Blue;
-            this.button5.Location = new System.Drawing.Point(1132, 467);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(67, 54);
-            this.button5.TabIndex = 13;
-            this.button5.UseVisualStyleBackColor = false;
+            this.backColor6.BackColor = System.Drawing.Color.Black;
+            this.backColor6.Location = new System.Drawing.Point(1351, 467);
+            this.backColor6.Name = "backColor6";
+            this.backColor6.Size = new System.Drawing.Size(67, 54);
+            this.backColor6.TabIndex = 16;
+            this.backColor6.UseVisualStyleBackColor = false;
+            this.backColor6.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // backColor5
+            // 
+            this.backColor5.BackColor = System.Drawing.Color.Green;
+            this.backColor5.Location = new System.Drawing.Point(1278, 467);
+            this.backColor5.Name = "backColor5";
+            this.backColor5.Size = new System.Drawing.Size(67, 54);
+            this.backColor5.TabIndex = 15;
+            this.backColor5.UseVisualStyleBackColor = false;
+            this.backColor5.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // backColor4
+            // 
+            this.backColor4.BackColor = System.Drawing.Color.Yellow;
+            this.backColor4.Location = new System.Drawing.Point(1205, 467);
+            this.backColor4.Name = "backColor4";
+            this.backColor4.Size = new System.Drawing.Size(67, 54);
+            this.backColor4.TabIndex = 14;
+            this.backColor4.UseVisualStyleBackColor = false;
+            this.backColor4.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // backColor3
+            // 
+            this.backColor3.BackColor = System.Drawing.Color.Blue;
+            this.backColor3.Location = new System.Drawing.Point(1132, 467);
+            this.backColor3.Name = "backColor3";
+            this.backColor3.Size = new System.Drawing.Size(67, 54);
+            this.backColor3.TabIndex = 13;
+            this.backColor3.UseVisualStyleBackColor = false;
+            this.backColor3.Click += new System.EventHandler(this.button5_Click);
             // 
             // backColor2
             // 
@@ -716,6 +818,7 @@
             this.backColor2.Size = new System.Drawing.Size(67, 54);
             this.backColor2.TabIndex = 12;
             this.backColor2.UseVisualStyleBackColor = false;
+            this.backColor2.Click += new System.EventHandler(this.backColor2_Click);
             // 
             // backColor1
             // 
@@ -725,23 +828,26 @@
             this.backColor1.Size = new System.Drawing.Size(67, 54);
             this.backColor1.TabIndex = 11;
             this.backColor1.UseVisualStyleBackColor = false;
+            this.backColor1.Click += new System.EventHandler(this.backColor1_Click);
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(984, 302);
-            this.trackBar1.Minimum = 1;
+            this.trackBar1.Location = new System.Drawing.Point(984, 319);
+            this.trackBar1.Maximum = 36;
+            this.trackBar1.Minimum = 8;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(418, 90);
             this.trackBar1.TabIndex = 10;
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trackBar1.Value = 1;
+            this.trackBar1.Value = 14;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label7.Location = new System.Drawing.Point(977, 246);
+            this.label7.Location = new System.Drawing.Point(979, 268);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(270, 37);
             this.label7.TabIndex = 8;
@@ -780,23 +886,27 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Choose font";
             // 
-            // listBox1
+            // fontList
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(986, 66);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(418, 154);
-            this.listBox1.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(0, 13);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(954, 631);
-            this.textBox1.TabIndex = 2;
+            this.fontList.FormattingEnabled = true;
+            this.fontList.ItemHeight = 25;
+            this.fontList.Items.AddRange(new object[] {
+            "Arial",
+            "Arial Rounded MT",
+            "Comic Sans MS",
+            "Courier New",
+            "Georgia",
+            "Jokerman",
+            "Lucida Handwriting",
+            "Papyrus",
+            "Snap ITC",
+            "Times New Roman",
+            "Verdana"});
+            this.fontList.Location = new System.Drawing.Point(986, 53);
+            this.fontList.Name = "fontList";
+            this.fontList.Size = new System.Drawing.Size(418, 204);
+            this.fontList.TabIndex = 3;
+            this.fontList.SelectedIndexChanged += new System.EventHandler(this.fontList_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -810,49 +920,9 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Write something!";
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.optionsToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1759, 40);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.browsingHistoryToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(98, 36);
-            this.fileToolStripMenuItem.Text = "Menu";
-            // 
-            // browsingHistoryToolStripMenuItem
-            // 
-            this.browsingHistoryToolStripMenuItem.Name = "browsingHistoryToolStripMenuItem";
-            this.browsingHistoryToolStripMenuItem.Size = new System.Drawing.Size(325, 44);
-            this.browsingHistoryToolStripMenuItem.Text = "Browsing history";
-            // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(119, 36);
-            this.optionsToolStripMenuItem.Text = "Options";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 36);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
             // toolTip
             // 
-            this.toolTip.ToolTipTitle = "Go back";
+            this.toolTip.ToolTipTitle = "Help";
             // 
             // imageList1
             // 
@@ -862,14 +932,16 @@
             this.imageList1.Images.SetKeyName(1, "ForwardArrow.png");
             this.imageList1.Images.SetKeyName(2, "history.png");
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1759, 912);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
@@ -885,10 +957,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -897,47 +966,32 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage webBrowser;
         private System.Windows.Forms.TabPage calculator;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.TabPage textEditor;
-        private System.Windows.Forms.ToolStripMenuItem browsingHistoryToolStripMenuItem;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ListBox fontList;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TabPage welcomePage;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button openFile;
+        private System.Windows.Forms.Button saveBtn;
+        private System.Windows.Forms.Button textColor6;
+        private System.Windows.Forms.Button textColor5;
+        private System.Windows.Forms.Button textColor4;
+        private System.Windows.Forms.Button textColor3;
+        private System.Windows.Forms.Button textColor2;
+        private System.Windows.Forms.Button textColor1;
+        private System.Windows.Forms.Button backColor6;
+        private System.Windows.Forms.Button backColor5;
+        private System.Windows.Forms.Button backColor4;
+        private System.Windows.Forms.Button backColor3;
         private System.Windows.Forms.Button backColor2;
         private System.Windows.Forms.Button backColor1;
         private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox CalcDisplay;
-        private System.Windows.Forms.Button calcBtnDivide;
-        private System.Windows.Forms.Button calcBtnEquals;
-        private System.Windows.Forms.Button calcBtnMultiply;
-        private System.Windows.Forms.Button calcBtnMinus;
-        private System.Windows.Forms.Button calcBtnPlus;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnHistory;
         private System.Windows.Forms.Button btnForward;
@@ -946,18 +1000,36 @@
         private System.Windows.Forms.Button btnGo;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button calcBtnClear;
+        private System.Windows.Forms.Button btnClearSums;
+        private System.Windows.Forms.TextBox calcHistory;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button calcBtn9;
+        private System.Windows.Forms.Button calcBtnClear;
+        private System.Windows.Forms.TextBox CalcDisplay;
         private System.Windows.Forms.Button calcBtn8;
+        private System.Windows.Forms.Button calcBtnDivide;
+        private System.Windows.Forms.Button calcBtnEquals;
         private System.Windows.Forms.Button calcBtn7;
+        private System.Windows.Forms.Button calcBtnMultiply;
+        private System.Windows.Forms.Button calcBtnMinus;
         private System.Windows.Forms.Button calcBtn6;
+        private System.Windows.Forms.Button calcBtnPlus;
         private System.Windows.Forms.Button calcBtn0;
         private System.Windows.Forms.Button calcBtn1;
         private System.Windows.Forms.Button calcBtn5;
         private System.Windows.Forms.Button calcBtn4;
         private System.Windows.Forms.Button calcBtn3;
         private System.Windows.Forms.Button calcBtn2;
-        private System.Windows.Forms.TextBox calcHistory;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox richTextBox;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox ideaBox;
+        private System.Windows.Forms.Button btnIdeaGenerator;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ListBox browserHistory;
+        private System.Windows.Forms.Button btnRandomStyle;
+        private System.Windows.Forms.Button btnWritingPrompt;
     }
 }
