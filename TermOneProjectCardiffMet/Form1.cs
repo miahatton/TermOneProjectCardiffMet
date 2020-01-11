@@ -7,6 +7,7 @@ using System.Collections;
 
 namespace TermOneProjectCardiffMet
 {
+    
     public partial class KidsToolBox : Form
     {
         // Instantiate random number generator (used in calculator and text editor idea prompts)
@@ -15,6 +16,14 @@ namespace TermOneProjectCardiffMet
         public KidsToolBox()
         {
             InitializeComponent();
+            /*
+             * Whenver the program starts, set the value of dontShow to be false.
+             * dontShow is  used in the text editor.
+             * If dontShow is false, a pop up window will let the user know that generating a writing prompt will erase their work.
+             * If the user selects 'don't show this message again' on the popup window (Form 2), the value of dontShow wil change to true.
+             */
+            Properties.Settings.Default.dontShow = false;
+            Properties.Settings.Default.Save();
         }
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
@@ -49,6 +58,24 @@ namespace TermOneProjectCardiffMet
         {
             // Select textEditor tab
             tabControl1.SelectTab(3);
+        }
+        private void btnHelpWelcome_Click(object sender, EventArgs e)
+        {
+            // clicking the ? icon toggles the visibility of the speech bubbles and text explaining what to do.
+            if (megBubble1.Visible == false)
+            {
+                picoSpeech1.Visible = true;
+                megSpeech1.Visible = true;
+                megBubble1.Visible = true;
+                picoBubble1.Visible = true;
+            }
+            else
+            {
+                megSpeech1.Visible = false;
+                picoSpeech1.Visible = false;
+                megBubble1.Visible = false;
+                picoBubble1.Visible = false;
+            }
         }
 
         // WEB BROWSER
@@ -531,11 +558,18 @@ namespace TermOneProjectCardiffMet
         // Calculator help panel
         private void btnHelpCalculator_Click(object sender, EventArgs e)
         {
-            // clicking ? button makes panel visible
-            helpPanelCalculator.Visible = true;
+            // clicking ? button toggles visibility of help panel
+            if (helpPanelCalculator.Visible == false)
+            {
+                helpPanelCalculator.Visible = true;
+            } else
+            {
+                helpPanelCalculator.Visible = false;
+            }
+           
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnCloseHelpCalc_Click(object sender, EventArgs e)
         {
             // clicking 'Close Help' makes panel invisible
             helpPanelCalculator.Visible = false;
@@ -740,6 +774,8 @@ namespace TermOneProjectCardiffMet
                 "Once upon a time, there was an elf who lived in a tower. ",
                 "Once upon a time, there was a naughty dragon ",
                 "Once upon a time, there was a cobbler who made magic shoes. ",
+                "The astronaut stepped off the rocket onto Mars. ",
+                "Once upon a time, there was a giant as tall as a tree. ",
                 "My favourite foods are ",
                 "My name is ",
                 "My best friend is ",
@@ -751,8 +787,8 @@ namespace TermOneProjectCardiffMet
             };
 
             // if the user has changed the text in the box, prompt them to let them know that clicking 'get idea' will replace their work.
-            // The dialog box has a 'don't show again dialog', which changes dontShow to false when selected
-            if (userChanges == true && Properties.Settings.Default.dontShow == true)
+            // The dialog box has a 'don't show again dialog', which changes dontShow to true when selected
+            if (userChanges == true && Properties.Settings.Default.dontShow == false)
             {
                 // create dialog box with yes/no/save option
                 MessageForm MessageForm = new MessageForm();
@@ -768,7 +804,6 @@ namespace TermOneProjectCardiffMet
                     btnSave.PerformClick();
                     richTextBox.Text = writingPrompts[rand.Next(writingPrompts.Length)];
                 }
-
             } 
             {
                 // if they have not changed the text, or if 'don't show again' has been checked on the dialog, replace the text with a random prompt.
@@ -799,6 +834,8 @@ namespace TermOneProjectCardiffMet
 
         private void richTextBox_KeyDown(object sender, KeyEventArgs e)
         {
+            // Add keyboard shortcuts Ctrl+Z and Ctrl+Y for undo and redo in text box.
+
             if (e.KeyCode == Keys.Control && e.KeyCode == Keys.Z)
             {
                 btnUndo.PerformClick();
@@ -808,31 +845,13 @@ namespace TermOneProjectCardiffMet
             }
         }
 
-        private void imgLinkPlus_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectTab(1);
-            webBrowser1.Navigate("https://www.bbc.co.uk/bitesize/topics/zwv39j6/articles/z8hyfrd");
-        }
-
-        private void imgLinkMinus_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void imgLinkTimes_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void imgLinkDivide_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void helpBtnTextEditor_Click(object sender, EventArgs e)
         {
+            // clicking the ? icon toggles the visibility of the help panel
             if(helpPanelTexteditor.Visible == false)
             {
+                // set background colour of help panel to be the background colour of the text box.
+                helpPanelTexteditor.BackColor = richTextBox.BackColor;
                 helpPanelTexteditor.Visible = true;
             } else
             {
@@ -842,6 +861,7 @@ namespace TermOneProjectCardiffMet
 
         private void btnCloseHelpText_Click(object sender, EventArgs e)
         {
+            // clicking 'close help' button hides the help panel
             helpPanelTexteditor.Visible = false;
         }
     }

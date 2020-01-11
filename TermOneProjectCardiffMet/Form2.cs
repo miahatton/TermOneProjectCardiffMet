@@ -19,6 +19,7 @@ namespace TermOneProjectCardiffMet
 
         private void chckBoxDontAsk_CheckedChanged(object sender, EventArgs e)
         {
+            // when user checks 'don't show again', the dontShow property is set to true.
             Properties.Settings.Default.dontShow = this.chckBoxDontAsk.Checked;
             Properties.Settings.Default.Save();
         }

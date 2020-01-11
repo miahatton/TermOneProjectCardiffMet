@@ -32,6 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KidsToolBox));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.welcomePage = new System.Windows.Forms.TabPage();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnHelpWelcome = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.picoSpeech1 = new System.Windows.Forms.Label();
+            this.megSpeech1 = new System.Windows.Forms.Label();
+            this.picoBubble1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnWriteStory = new System.Windows.Forms.Button();
@@ -59,6 +66,7 @@
             this.webAddressBox = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.calculator = new System.Windows.Forms.TabPage();
+            this.btnHelpCalculator = new System.Windows.Forms.Button();
             this.helpPanelCalculator = new System.Windows.Forms.Panel();
             this.btnCloseHelpCalc = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
@@ -68,12 +76,10 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnHelpCalculator = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
             this.imgLinkDivide = new System.Windows.Forms.PictureBox();
-            this.imgLinkTimes = new System.Windows.Forms.PictureBox();
-            this.imgLinkMinus = new System.Windows.Forms.PictureBox();
-            this.imgLinkPlus = new System.Windows.Forms.PictureBox();
+            this.imgTimes = new System.Windows.Forms.PictureBox();
+            this.imgMinus = new System.Windows.Forms.PictureBox();
+            this.imgPlus = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.ideaBox = new System.Windows.Forms.TextBox();
@@ -102,6 +108,15 @@
             this.calcBtn2 = new System.Windows.Forms.Button();
             this.textEditor = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.helpBtnTextEditor = new System.Windows.Forms.Button();
+            this.helpPanelTexteditor = new System.Windows.Forms.Panel();
+            this.btnCloseHelpText = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnUndo = new System.Windows.Forms.Button();
             this.btnRedo = new System.Windows.Forms.Button();
@@ -132,17 +147,11 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.helpPanelTexteditor = new System.Windows.Forms.Panel();
-            this.helpBtnTextEditor = new System.Windows.Forms.Button();
-            this.btnCloseHelpText = new System.Windows.Forms.Button();
+            this.megBubble1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.welcomePage.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picoBubble1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.webBrowser.SuspendLayout();
@@ -160,19 +169,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLinkDivide)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLinkTimes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLinkMinus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLinkPlus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgTimes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgMinus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgPlus)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.textEditor.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.helpPanelTexteditor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            this.helpPanelTexteditor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.megBubble1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -185,7 +195,7 @@
             this.tabControl1.Controls.Add(this.calculator);
             this.tabControl1.Controls.Add(this.textEditor);
             this.tabControl1.Location = new System.Drawing.Point(2, -2);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1602, 888);
@@ -195,6 +205,11 @@
             // welcomePage
             // 
             this.welcomePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.welcomePage.Controls.Add(this.panel6);
+            this.welcomePage.Controls.Add(this.picoSpeech1);
+            this.welcomePage.Controls.Add(this.megSpeech1);
+            this.welcomePage.Controls.Add(this.picoBubble1);
+            this.welcomePage.Controls.Add(this.megBubble1);
             this.welcomePage.Controls.Add(this.pictureBox2);
             this.welcomePage.Controls.Add(this.pictureBox1);
             this.welcomePage.Controls.Add(this.btnWriteStory);
@@ -202,30 +217,130 @@
             this.welcomePage.Controls.Add(this.btnBrowseWeb);
             this.welcomePage.Controls.Add(this.label9);
             this.welcomePage.Location = new System.Drawing.Point(8, 39);
-            this.welcomePage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.welcomePage.Margin = new System.Windows.Forms.Padding(4);
             this.welcomePage.Name = "welcomePage";
             this.welcomePage.Size = new System.Drawing.Size(1586, 841);
             this.welcomePage.TabIndex = 3;
             this.welcomePage.Text = "Welcome";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.btnHelpWelcome);
+            this.panel6.Controls.Add(this.label12);
+            this.panel6.Controls.Add(this.label17);
+            this.panel6.Location = new System.Drawing.Point(97, 665);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1379, 87);
+            this.panel6.TabIndex = 29;
+            // 
+            // btnHelpWelcome
+            // 
+            this.btnHelpWelcome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHelpWelcome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHelpWelcome.BackgroundImage = global::TermOneProjectCardiffMet.Properties.Resources.help;
+            this.btnHelpWelcome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnHelpWelcome.FlatAppearance.BorderSize = 0;
+            this.btnHelpWelcome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnHelpWelcome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnHelpWelcome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelpWelcome.ForeColor = System.Drawing.Color.Transparent;
+            this.btnHelpWelcome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHelpWelcome.Location = new System.Drawing.Point(898, 11);
+            this.btnHelpWelcome.Margin = new System.Windows.Forms.Padding(6);
+            this.btnHelpWelcome.Name = "btnHelpWelcome";
+            this.btnHelpWelcome.Size = new System.Drawing.Size(62, 60);
+            this.btnHelpWelcome.TabIndex = 19;
+            this.btnHelpWelcome.UseCompatibleTextRendering = true;
+            this.btnHelpWelcome.UseVisualStyleBackColor = false;
+            this.btnHelpWelcome.Click += new System.EventHandler(this.btnHelpWelcome_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F);
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.label12.Location = new System.Drawing.Point(10, 17);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(883, 50);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "If you need help using the tools, click the ";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F);
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.label17.Location = new System.Drawing.Point(960, 17);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(125, 50);
+            this.label17.TabIndex = 20;
+            this.label17.Text = "icon.";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picoSpeech1
+            // 
+            this.picoSpeech1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picoSpeech1.BackColor = System.Drawing.Color.White;
+            this.picoSpeech1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.picoSpeech1.Location = new System.Drawing.Point(712, 419);
+            this.picoSpeech1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.picoSpeech1.Name = "picoSpeech1";
+            this.picoSpeech1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.picoSpeech1.Size = new System.Drawing.Size(336, 66);
+            this.picoSpeech1.TabIndex = 28;
+            this.picoSpeech1.Text = "Click the ? icon again to go back to the tools.";
+            this.picoSpeech1.Visible = false;
+            // 
+            // megSpeech1
+            // 
+            this.megSpeech1.BackColor = System.Drawing.Color.White;
+            this.megSpeech1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.megSpeech1.Location = new System.Drawing.Point(598, 198);
+            this.megSpeech1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.megSpeech1.Name = "megSpeech1";
+            this.megSpeech1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.megSpeech1.Size = new System.Drawing.Size(353, 133);
+            this.megSpeech1.TabIndex = 26;
+            this.megSpeech1.Text = "We\'ll tell you what to do! You can switch between the tools using the buttons at " +
+    "the top.";
+            this.megSpeech1.Visible = false;
+            // 
+            // picoBubble1
+            // 
+            this.picoBubble1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picoBubble1.BackColor = System.Drawing.Color.Transparent;
+            this.picoBubble1.Image = global::TermOneProjectCardiffMet.Properties.Resources.picoSpeech;
+            this.picoBubble1.Location = new System.Drawing.Point(701, 408);
+            this.picoBubble1.Margin = new System.Windows.Forms.Padding(6);
+            this.picoBubble1.Name = "picoBubble1";
+            this.picoBubble1.Size = new System.Drawing.Size(440, 90);
+            this.picoBubble1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picoBubble1.TabIndex = 27;
+            this.picoBubble1.TabStop = false;
+            this.picoBubble1.Visible = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::TermOneProjectCardiffMet.Properties.Resources.meg;
             this.pictureBox2.Location = new System.Drawing.Point(116, 219);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(382, 400);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.WaitOnLoad = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::TermOneProjectCardiffMet.Properties.Resources.pico;
             this.pictureBox1.Location = new System.Drawing.Point(1102, 342);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(374, 277);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -239,7 +354,7 @@
             this.btnWriteStory.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWriteStory.ForeColor = System.Drawing.Color.Black;
             this.btnWriteStory.Location = new System.Drawing.Point(544, 508);
-            this.btnWriteStory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWriteStory.Margin = new System.Windows.Forms.Padding(4);
             this.btnWriteStory.Name = "btnWriteStory";
             this.btnWriteStory.Size = new System.Drawing.Size(504, 112);
             this.btnWriteStory.TabIndex = 14;
@@ -255,7 +370,7 @@
             this.btnPlayNumbers.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlayNumbers.ForeColor = System.Drawing.Color.Black;
             this.btnPlayNumbers.Location = new System.Drawing.Point(544, 365);
-            this.btnPlayNumbers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPlayNumbers.Margin = new System.Windows.Forms.Padding(4);
             this.btnPlayNumbers.Name = "btnPlayNumbers";
             this.btnPlayNumbers.Size = new System.Drawing.Size(504, 112);
             this.btnPlayNumbers.TabIndex = 13;
@@ -271,7 +386,7 @@
             this.btnBrowseWeb.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBrowseWeb.ForeColor = System.Drawing.Color.Black;
             this.btnBrowseWeb.Location = new System.Drawing.Point(544, 219);
-            this.btnBrowseWeb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBrowseWeb.Margin = new System.Windows.Forms.Padding(4);
             this.btnBrowseWeb.Name = "btnBrowseWeb";
             this.btnBrowseWeb.Size = new System.Drawing.Size(504, 112);
             this.btnBrowseWeb.TabIndex = 12;
@@ -303,9 +418,9 @@
             this.webBrowser.Controls.Add(this.panel1);
             this.webBrowser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.webBrowser.Location = new System.Drawing.Point(8, 39);
-            this.webBrowser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.webBrowser.Margin = new System.Windows.Forms.Padding(4);
             this.webBrowser.Name = "webBrowser";
-            this.webBrowser.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.webBrowser.Padding = new System.Windows.Forms.Padding(4);
             this.webBrowser.Size = new System.Drawing.Size(1586, 841);
             this.webBrowser.TabIndex = 0;
             this.webBrowser.Text = "Browse the web";
@@ -318,7 +433,7 @@
             this.btnCloseBrowserHistory.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
             this.btnCloseBrowserHistory.ForeColor = System.Drawing.Color.White;
             this.btnCloseBrowserHistory.Location = new System.Drawing.Point(1342, 581);
-            this.btnCloseBrowserHistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCloseBrowserHistory.Margin = new System.Windows.Forms.Padding(4);
             this.btnCloseBrowserHistory.Name = "btnCloseBrowserHistory";
             this.btnCloseBrowserHistory.Size = new System.Drawing.Size(220, 50);
             this.btnCloseBrowserHistory.TabIndex = 26;
@@ -339,7 +454,7 @@
             this.helpPanelBrowser.Controls.Add(this.pictureBox3);
             this.helpPanelBrowser.Controls.Add(this.pictureBox4);
             this.helpPanelBrowser.Location = new System.Drawing.Point(-8, 96);
-            this.helpPanelBrowser.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.helpPanelBrowser.Margin = new System.Windows.Forms.Padding(6);
             this.helpPanelBrowser.Name = "helpPanelBrowser";
             this.helpPanelBrowser.Size = new System.Drawing.Size(1602, 437);
             this.helpPanelBrowser.TabIndex = 20;
@@ -353,7 +468,7 @@
             this.btnCloseHelpBrowser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCloseHelpBrowser.ForeColor = System.Drawing.Color.White;
             this.btnCloseHelpBrowser.Location = new System.Drawing.Point(694, 325);
-            this.btnCloseHelpBrowser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCloseHelpBrowser.Margin = new System.Windows.Forms.Padding(4);
             this.btnCloseHelpBrowser.Name = "btnCloseHelpBrowser";
             this.btnCloseHelpBrowser.Size = new System.Drawing.Size(220, 73);
             this.btnCloseHelpBrowser.TabIndex = 25;
@@ -381,7 +496,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::TermOneProjectCardiffMet.Properties.Resources.picoSpeech;
             this.pictureBox6.Location = new System.Drawing.Point(818, 6);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(440, 190);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -394,7 +509,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::TermOneProjectCardiffMet.Properties.Resources.pico1;
             this.pictureBox5.Location = new System.Drawing.Point(1270, 88);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(200, 231);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -418,7 +533,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::TermOneProjectCardiffMet.Properties.Resources.meg;
             this.pictureBox3.Location = new System.Drawing.Point(38, 6);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(200, 313);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -430,7 +545,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::TermOneProjectCardiffMet.Properties.Resources.megSpeech;
             this.pictureBox4.Location = new System.Drawing.Point(228, 0);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(440, 162);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -445,7 +560,7 @@
             this.browserHistory.Items.AddRange(new object[] {
             "https://www.ecosia.org/"});
             this.browserHistory.Location = new System.Drawing.Point(324, 92);
-            this.browserHistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.browserHistory.Margin = new System.Windows.Forms.Padding(4);
             this.browserHistory.Name = "browserHistory";
             this.browserHistory.Size = new System.Drawing.Size(1258, 522);
             this.browserHistory.TabIndex = 4;
@@ -481,7 +596,7 @@
             this.panel1.Controls.Add(this.webAddressBox);
             this.panel1.Controls.Add(this.btnBack);
             this.panel1.Location = new System.Drawing.Point(36, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1550, 102);
             this.panel1.TabIndex = 3;
@@ -499,7 +614,7 @@
             this.btnHelpBrowser.ForeColor = System.Drawing.Color.Transparent;
             this.btnHelpBrowser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHelpBrowser.Location = new System.Drawing.Point(1444, 10);
-            this.btnHelpBrowser.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnHelpBrowser.Margin = new System.Windows.Forms.Padding(6);
             this.btnHelpBrowser.Name = "btnHelpBrowser";
             this.btnHelpBrowser.Size = new System.Drawing.Size(82, 73);
             this.btnHelpBrowser.TabIndex = 18;
@@ -516,7 +631,7 @@
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.ForeColor = System.Drawing.Color.Transparent;
             this.btnRefresh.Location = new System.Drawing.Point(1260, 10);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(84, 73);
             this.btnRefresh.TabIndex = 17;
@@ -532,7 +647,7 @@
             this.btnGo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGo.ForeColor = System.Drawing.Color.White;
             this.btnGo.Location = new System.Drawing.Point(934, 10);
-            this.btnGo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGo.Margin = new System.Windows.Forms.Padding(4);
             this.btnGo.Name = "btnGo";
             this.btnGo.Size = new System.Drawing.Size(88, 73);
             this.btnGo.TabIndex = 16;
@@ -549,7 +664,7 @@
             this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHistory.ForeColor = System.Drawing.Color.Transparent;
             this.btnHistory.Location = new System.Drawing.Point(1352, 8);
-            this.btnHistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHistory.Margin = new System.Windows.Forms.Padding(4);
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.Size = new System.Drawing.Size(84, 73);
             this.btnHistory.TabIndex = 4;
@@ -566,7 +681,7 @@
             this.btnForward.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnForward.ForeColor = System.Drawing.Color.Transparent;
             this.btnForward.Location = new System.Drawing.Point(1168, 10);
-            this.btnForward.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnForward.Margin = new System.Windows.Forms.Padding(4);
             this.btnForward.Name = "btnForward";
             this.btnForward.Size = new System.Drawing.Size(84, 73);
             this.btnForward.TabIndex = 3;
@@ -579,7 +694,7 @@
             this.webAddressBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.webAddressBox.Location = new System.Drawing.Point(4, 21);
-            this.webAddressBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.webAddressBox.Margin = new System.Windows.Forms.Padding(4);
             this.webAddressBox.Name = "webAddressBox";
             this.webAddressBox.Size = new System.Drawing.Size(918, 45);
             this.webAddressBox.TabIndex = 2;
@@ -598,7 +713,7 @@
             this.btnBack.ForeColor = System.Drawing.Color.Transparent;
             this.btnBack.ImageIndex = 0;
             this.btnBack.Location = new System.Drawing.Point(1076, 10);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(84, 73);
             this.btnBack.TabIndex = 0;
@@ -609,6 +724,7 @@
             // calculator
             // 
             this.calculator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.calculator.Controls.Add(this.btnHelpCalculator);
             this.calculator.Controls.Add(this.helpPanelCalculator);
             this.calculator.Controls.Add(this.panel5);
             this.calculator.Controls.Add(this.panel4);
@@ -620,17 +736,37 @@
             this.calculator.Controls.Add(this.label1);
             this.calculator.Controls.Add(this.panel3);
             this.calculator.Location = new System.Drawing.Point(8, 39);
-            this.calculator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calculator.Margin = new System.Windows.Forms.Padding(4);
             this.calculator.Name = "calculator";
-            this.calculator.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calculator.Padding = new System.Windows.Forms.Padding(4);
             this.calculator.Size = new System.Drawing.Size(1586, 841);
             this.calculator.TabIndex = 1;
             this.calculator.Text = "Play with numbers";
             // 
+            // btnHelpCalculator
+            // 
+            this.btnHelpCalculator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHelpCalculator.BackColor = System.Drawing.Color.Transparent;
+            this.btnHelpCalculator.BackgroundImage = global::TermOneProjectCardiffMet.Properties.Resources.help;
+            this.btnHelpCalculator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnHelpCalculator.FlatAppearance.BorderSize = 0;
+            this.btnHelpCalculator.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnHelpCalculator.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnHelpCalculator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelpCalculator.ForeColor = System.Drawing.Color.Transparent;
+            this.btnHelpCalculator.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHelpCalculator.Location = new System.Drawing.Point(1499, 2);
+            this.btnHelpCalculator.Margin = new System.Windows.Forms.Padding(6);
+            this.btnHelpCalculator.Name = "btnHelpCalculator";
+            this.btnHelpCalculator.Size = new System.Drawing.Size(82, 77);
+            this.btnHelpCalculator.TabIndex = 21;
+            this.btnHelpCalculator.UseCompatibleTextRendering = true;
+            this.btnHelpCalculator.UseVisualStyleBackColor = false;
+            this.btnHelpCalculator.Click += new System.EventHandler(this.btnHelpCalculator_Click);
+            // 
             // helpPanelCalculator
             // 
-            this.helpPanelCalculator.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.helpPanelCalculator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.helpPanelCalculator.Controls.Add(this.btnCloseHelpCalc);
             this.helpPanelCalculator.Controls.Add(this.label13);
             this.helpPanelCalculator.Controls.Add(this.pictureBox10);
@@ -638,10 +774,10 @@
             this.helpPanelCalculator.Controls.Add(this.label14);
             this.helpPanelCalculator.Controls.Add(this.pictureBox11);
             this.helpPanelCalculator.Controls.Add(this.pictureBox12);
-            this.helpPanelCalculator.Location = new System.Drawing.Point(1084, 12);
-            this.helpPanelCalculator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.helpPanelCalculator.Location = new System.Drawing.Point(1080, 0);
+            this.helpPanelCalculator.Margin = new System.Windows.Forms.Padding(6);
             this.helpPanelCalculator.Name = "helpPanelCalculator";
-            this.helpPanelCalculator.Size = new System.Drawing.Size(502, 829);
+            this.helpPanelCalculator.Size = new System.Drawing.Size(502, 838);
             this.helpPanelCalculator.TabIndex = 26;
             this.helpPanelCalculator.Visible = false;
             // 
@@ -653,13 +789,13 @@
             this.btnCloseHelpCalc.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCloseHelpCalc.ForeColor = System.Drawing.Color.White;
             this.btnCloseHelpCalc.Location = new System.Drawing.Point(160, 692);
-            this.btnCloseHelpCalc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCloseHelpCalc.Margin = new System.Windows.Forms.Padding(4);
             this.btnCloseHelpCalc.Name = "btnCloseHelpCalc";
             this.btnCloseHelpCalc.Size = new System.Drawing.Size(220, 73);
             this.btnCloseHelpCalc.TabIndex = 25;
             this.btnCloseHelpCalc.Text = "Close help";
             this.btnCloseHelpCalc.UseVisualStyleBackColor = false;
-            this.btnCloseHelpCalc.Click += new System.EventHandler(this.button2_Click);
+            this.btnCloseHelpCalc.Click += new System.EventHandler(this.btnCloseHelpCalc_Click);
             // 
             // label13
             // 
@@ -678,7 +814,7 @@
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Image = global::TermOneProjectCardiffMet.Properties.Resources.megSpeechTall;
             this.pictureBox10.Location = new System.Drawing.Point(222, 369);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(266, 231);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -690,7 +826,7 @@
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.Image = global::TermOneProjectCardiffMet.Properties.Resources.meg;
             this.pictureBox9.Location = new System.Drawing.Point(24, 369);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(200, 313);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -716,7 +852,7 @@
             this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox11.Image = global::TermOneProjectCardiffMet.Properties.Resources.picoSpeechTall;
             this.pictureBox11.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(268, 308);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -729,7 +865,7 @@
             this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox12.Image = global::TermOneProjectCardiffMet.Properties.Resources.pico1;
             this.pictureBox12.Location = new System.Drawing.Point(282, 133);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(200, 231);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -739,112 +875,74 @@
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.Controls.Add(this.btnHelpCalculator);
-            this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.imgLinkDivide);
-            this.panel5.Controls.Add(this.imgLinkTimes);
-            this.panel5.Controls.Add(this.imgLinkMinus);
-            this.panel5.Controls.Add(this.imgLinkPlus);
+            this.panel5.Controls.Add(this.imgTimes);
+            this.panel5.Controls.Add(this.imgMinus);
+            this.panel5.Controls.Add(this.imgPlus);
             this.panel5.Location = new System.Drawing.Point(1088, 25);
-            this.panel5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel5.Margin = new System.Windows.Forms.Padding(6);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(492, 813);
             this.panel5.TabIndex = 27;
-            // 
-            // btnHelpCalculator
-            // 
-            this.btnHelpCalculator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnHelpCalculator.BackColor = System.Drawing.Color.Transparent;
-            this.btnHelpCalculator.BackgroundImage = global::TermOneProjectCardiffMet.Properties.Resources.help;
-            this.btnHelpCalculator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnHelpCalculator.FlatAppearance.BorderSize = 0;
-            this.btnHelpCalculator.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnHelpCalculator.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnHelpCalculator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHelpCalculator.ForeColor = System.Drawing.Color.Transparent;
-            this.btnHelpCalculator.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelpCalculator.Location = new System.Drawing.Point(410, 729);
-            this.btnHelpCalculator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.btnHelpCalculator.Name = "btnHelpCalculator";
-            this.btnHelpCalculator.Size = new System.Drawing.Size(82, 77);
-            this.btnHelpCalculator.TabIndex = 21;
-            this.btnHelpCalculator.UseCompatibleTextRendering = true;
-            this.btnHelpCalculator.UseVisualStyleBackColor = false;
-            this.btnHelpCalculator.Click += new System.EventHandler(this.btnHelpCalculator_Click);
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label12.Location = new System.Drawing.Point(4, 665);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(428, 123);
-            this.label12.TabIndex = 27;
-            this.label12.Text = "Click on an operator to find out more about it on the Internet.";
             // 
             // imgLinkDivide
             // 
             this.imgLinkDivide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.imgLinkDivide.BackColor = System.Drawing.Color.Transparent;
             this.imgLinkDivide.Image = global::TermOneProjectCardiffMet.Properties.Resources.divide;
-            this.imgLinkDivide.Location = new System.Drawing.Point(248, 456);
-            this.imgLinkDivide.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.imgLinkDivide.Location = new System.Drawing.Point(275, 582);
+            this.imgLinkDivide.Margin = new System.Windows.Forms.Padding(6);
             this.imgLinkDivide.Name = "imgLinkDivide";
             this.imgLinkDivide.Size = new System.Drawing.Size(202, 169);
             this.imgLinkDivide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgLinkDivide.TabIndex = 26;
             this.imgLinkDivide.TabStop = false;
-            this.imgLinkDivide.Click += new System.EventHandler(this.imgLinkDivide_Click);
             // 
-            // imgLinkTimes
+            // imgTimes
             // 
-            this.imgLinkTimes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.imgLinkTimes.BackColor = System.Drawing.Color.Transparent;
-            this.imgLinkTimes.Image = global::TermOneProjectCardiffMet.Properties.Resources.times;
-            this.imgLinkTimes.Location = new System.Drawing.Point(28, 362);
-            this.imgLinkTimes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.imgLinkTimes.Name = "imgLinkTimes";
-            this.imgLinkTimes.Size = new System.Drawing.Size(202, 162);
-            this.imgLinkTimes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgLinkTimes.TabIndex = 25;
-            this.imgLinkTimes.TabStop = false;
-            this.imgLinkTimes.Click += new System.EventHandler(this.imgLinkTimes_Click);
+            this.imgTimes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.imgTimes.BackColor = System.Drawing.Color.Transparent;
+            this.imgTimes.Image = global::TermOneProjectCardiffMet.Properties.Resources.times;
+            this.imgTimes.Location = new System.Drawing.Point(49, 413);
+            this.imgTimes.Margin = new System.Windows.Forms.Padding(6);
+            this.imgTimes.Name = "imgTimes";
+            this.imgTimes.Size = new System.Drawing.Size(202, 162);
+            this.imgTimes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgTimes.TabIndex = 25;
+            this.imgTimes.TabStop = false;
             // 
-            // imgLinkMinus
+            // imgMinus
             // 
-            this.imgLinkMinus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.imgLinkMinus.BackColor = System.Drawing.Color.Transparent;
-            this.imgLinkMinus.Image = global::TermOneProjectCardiffMet.Properties.Resources.minus;
-            this.imgLinkMinus.Location = new System.Drawing.Point(248, 242);
-            this.imgLinkMinus.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.imgLinkMinus.Name = "imgLinkMinus";
-            this.imgLinkMinus.Size = new System.Drawing.Size(202, 173);
-            this.imgLinkMinus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgLinkMinus.TabIndex = 24;
-            this.imgLinkMinus.TabStop = false;
-            this.imgLinkMinus.Click += new System.EventHandler(this.imgLinkMinus_Click);
+            this.imgMinus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.imgMinus.BackColor = System.Drawing.Color.Transparent;
+            this.imgMinus.Image = global::TermOneProjectCardiffMet.Properties.Resources.minus;
+            this.imgMinus.Location = new System.Drawing.Point(275, 227);
+            this.imgMinus.Margin = new System.Windows.Forms.Padding(6);
+            this.imgMinus.Name = "imgMinus";
+            this.imgMinus.Size = new System.Drawing.Size(202, 173);
+            this.imgMinus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgMinus.TabIndex = 24;
+            this.imgMinus.TabStop = false;
             // 
-            // imgLinkPlus
+            // imgPlus
             // 
-            this.imgLinkPlus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.imgLinkPlus.BackColor = System.Drawing.Color.Transparent;
-            this.imgLinkPlus.Image = global::TermOneProjectCardiffMet.Properties.Resources.plus;
-            this.imgLinkPlus.Location = new System.Drawing.Point(34, 140);
-            this.imgLinkPlus.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.imgLinkPlus.Name = "imgLinkPlus";
-            this.imgLinkPlus.Size = new System.Drawing.Size(202, 162);
-            this.imgLinkPlus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgLinkPlus.TabIndex = 23;
-            this.imgLinkPlus.TabStop = false;
-            this.imgLinkPlus.Click += new System.EventHandler(this.imgLinkPlus_Click);
+            this.imgPlus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.imgPlus.BackColor = System.Drawing.Color.Transparent;
+            this.imgPlus.Image = global::TermOneProjectCardiffMet.Properties.Resources.plus;
+            this.imgPlus.Location = new System.Drawing.Point(49, 48);
+            this.imgPlus.Margin = new System.Windows.Forms.Padding(6);
+            this.imgPlus.Name = "imgPlus";
+            this.imgPlus.Size = new System.Drawing.Size(202, 162);
+            this.imgPlus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgPlus.TabIndex = 23;
+            this.imgPlus.TabStop = false;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(192)))), ((int)(((byte)(72)))));
             this.panel4.Controls.Add(this.label2);
             this.panel4.Location = new System.Drawing.Point(680, 131);
-            this.panel4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel4.Margin = new System.Windows.Forms.Padding(6);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(394, 48);
             this.panel4.TabIndex = 27;
@@ -865,7 +963,7 @@
             // 
             this.ideaBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ideaBox.Location = new System.Drawing.Point(230, 719);
-            this.ideaBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ideaBox.Margin = new System.Windows.Forms.Padding(4);
             this.ideaBox.Name = "ideaBox";
             this.ideaBox.Size = new System.Drawing.Size(840, 57);
             this.ideaBox.TabIndex = 18;
@@ -877,7 +975,7 @@
             this.btnIdeaGenerator.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIdeaGenerator.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.btnIdeaGenerator.Location = new System.Drawing.Point(48, 719);
-            this.btnIdeaGenerator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIdeaGenerator.Margin = new System.Windows.Forms.Padding(4);
             this.btnIdeaGenerator.Name = "btnIdeaGenerator";
             this.btnIdeaGenerator.Size = new System.Drawing.Size(164, 58);
             this.btnIdeaGenerator.TabIndex = 20;
@@ -904,7 +1002,7 @@
             this.btnClearSums.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClearSums.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.btnClearSums.Location = new System.Drawing.Point(680, 565);
-            this.btnClearSums.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClearSums.Margin = new System.Windows.Forms.Padding(4);
             this.btnClearSums.Name = "btnClearSums";
             this.btnClearSums.Size = new System.Drawing.Size(394, 54);
             this.btnClearSums.TabIndex = 18;
@@ -918,7 +1016,7 @@
             this.calcHistory.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcHistory.ForeColor = System.Drawing.Color.White;
             this.calcHistory.Location = new System.Drawing.Point(680, 183);
-            this.calcHistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcHistory.Margin = new System.Windows.Forms.Padding(4);
             this.calcHistory.Multiline = true;
             this.calcHistory.Name = "calcHistory";
             this.calcHistory.ReadOnly = true;
@@ -958,7 +1056,7 @@
             this.panel3.Controls.Add(this.calcBtn3);
             this.panel3.Controls.Add(this.calcBtn2);
             this.panel3.Location = new System.Drawing.Point(46, 131);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(592, 488);
             this.panel3.TabIndex = 7;
@@ -969,7 +1067,7 @@
             this.calcBtn9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn9.ForeColor = System.Drawing.Color.White;
             this.calcBtn9.Location = new System.Drawing.Point(244, 296);
-            this.calcBtn9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtn9.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtn9.Name = "calcBtn9";
             this.calcBtn9.Size = new System.Drawing.Size(92, 79);
             this.calcBtn9.TabIndex = 9;
@@ -983,7 +1081,7 @@
             this.calcBtnClear.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtnClear.ForeColor = System.Drawing.Color.Black;
             this.calcBtnClear.Location = new System.Drawing.Point(368, 390);
-            this.calcBtnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtnClear.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtnClear.Name = "calcBtnClear";
             this.calcBtnClear.Size = new System.Drawing.Size(190, 79);
             this.calcBtnClear.TabIndex = 17;
@@ -995,7 +1093,7 @@
             // 
             this.calcDisplay.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcDisplay.Location = new System.Drawing.Point(28, 27);
-            this.calcDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcDisplay.Margin = new System.Windows.Forms.Padding(4);
             this.calcDisplay.Name = "calcDisplay";
             this.calcDisplay.ReadOnly = true;
             this.calcDisplay.Size = new System.Drawing.Size(532, 57);
@@ -1007,7 +1105,7 @@
             this.calcBtn8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn8.ForeColor = System.Drawing.Color.White;
             this.calcBtn8.Location = new System.Drawing.Point(136, 296);
-            this.calcBtn8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtn8.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtn8.Name = "calcBtn8";
             this.calcBtn8.Size = new System.Drawing.Size(92, 79);
             this.calcBtn8.TabIndex = 8;
@@ -1021,7 +1119,7 @@
             this.calcBtnDivide.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtnDivide.ForeColor = System.Drawing.Color.Black;
             this.calcBtnDivide.Location = new System.Drawing.Point(468, 202);
-            this.calcBtnDivide.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtnDivide.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtnDivide.Name = "calcBtnDivide";
             this.calcBtnDivide.Size = new System.Drawing.Size(92, 79);
             this.calcBtnDivide.TabIndex = 14;
@@ -1036,7 +1134,7 @@
             this.calcBtnEquals.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtnEquals.ForeColor = System.Drawing.Color.Black;
             this.calcBtnEquals.Location = new System.Drawing.Point(368, 296);
-            this.calcBtnEquals.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtnEquals.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtnEquals.Name = "calcBtnEquals";
             this.calcBtnEquals.Size = new System.Drawing.Size(190, 79);
             this.calcBtnEquals.TabIndex = 15;
@@ -1050,7 +1148,7 @@
             this.calcBtn7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn7.ForeColor = System.Drawing.Color.White;
             this.calcBtn7.Location = new System.Drawing.Point(26, 296);
-            this.calcBtn7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtn7.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtn7.Name = "calcBtn7";
             this.calcBtn7.Size = new System.Drawing.Size(92, 79);
             this.calcBtn7.TabIndex = 7;
@@ -1064,7 +1162,7 @@
             this.calcBtnMultiply.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtnMultiply.ForeColor = System.Drawing.Color.Black;
             this.calcBtnMultiply.Location = new System.Drawing.Point(368, 202);
-            this.calcBtnMultiply.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtnMultiply.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtnMultiply.Name = "calcBtnMultiply";
             this.calcBtnMultiply.Size = new System.Drawing.Size(92, 79);
             this.calcBtnMultiply.TabIndex = 13;
@@ -1079,7 +1177,7 @@
             this.calcBtnMinus.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtnMinus.ForeColor = System.Drawing.Color.Black;
             this.calcBtnMinus.Location = new System.Drawing.Point(468, 108);
-            this.calcBtnMinus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtnMinus.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtnMinus.Name = "calcBtnMinus";
             this.calcBtnMinus.Size = new System.Drawing.Size(92, 79);
             this.calcBtnMinus.TabIndex = 12;
@@ -1094,7 +1192,7 @@
             this.calcBtn6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn6.ForeColor = System.Drawing.Color.White;
             this.calcBtn6.Location = new System.Drawing.Point(244, 202);
-            this.calcBtn6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtn6.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtn6.Name = "calcBtn6";
             this.calcBtn6.Size = new System.Drawing.Size(92, 79);
             this.calcBtn6.TabIndex = 6;
@@ -1108,7 +1206,7 @@
             this.calcBtnPlus.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtnPlus.ForeColor = System.Drawing.Color.Black;
             this.calcBtnPlus.Location = new System.Drawing.Point(368, 108);
-            this.calcBtnPlus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtnPlus.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtnPlus.Name = "calcBtnPlus";
             this.calcBtnPlus.Size = new System.Drawing.Size(92, 79);
             this.calcBtnPlus.TabIndex = 11;
@@ -1123,7 +1221,7 @@
             this.calcBtn0.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn0.ForeColor = System.Drawing.Color.White;
             this.calcBtn0.Location = new System.Drawing.Point(136, 390);
-            this.calcBtn0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtn0.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtn0.Name = "calcBtn0";
             this.calcBtn0.Size = new System.Drawing.Size(92, 79);
             this.calcBtn0.TabIndex = 10;
@@ -1137,7 +1235,7 @@
             this.calcBtn1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn1.ForeColor = System.Drawing.Color.White;
             this.calcBtn1.Location = new System.Drawing.Point(26, 108);
-            this.calcBtn1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtn1.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtn1.Name = "calcBtn1";
             this.calcBtn1.Size = new System.Drawing.Size(92, 79);
             this.calcBtn1.TabIndex = 1;
@@ -1151,7 +1249,7 @@
             this.calcBtn5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn5.ForeColor = System.Drawing.Color.White;
             this.calcBtn5.Location = new System.Drawing.Point(136, 202);
-            this.calcBtn5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtn5.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtn5.Name = "calcBtn5";
             this.calcBtn5.Size = new System.Drawing.Size(92, 79);
             this.calcBtn5.TabIndex = 5;
@@ -1165,7 +1263,7 @@
             this.calcBtn4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn4.ForeColor = System.Drawing.Color.White;
             this.calcBtn4.Location = new System.Drawing.Point(26, 202);
-            this.calcBtn4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtn4.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtn4.Name = "calcBtn4";
             this.calcBtn4.Size = new System.Drawing.Size(92, 79);
             this.calcBtn4.TabIndex = 4;
@@ -1179,7 +1277,7 @@
             this.calcBtn3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn3.ForeColor = System.Drawing.Color.White;
             this.calcBtn3.Location = new System.Drawing.Point(244, 108);
-            this.calcBtn3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtn3.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtn3.Name = "calcBtn3";
             this.calcBtn3.Size = new System.Drawing.Size(92, 79);
             this.calcBtn3.TabIndex = 3;
@@ -1193,7 +1291,7 @@
             this.calcBtn2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calcBtn2.ForeColor = System.Drawing.Color.White;
             this.calcBtn2.Location = new System.Drawing.Point(136, 108);
-            this.calcBtn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcBtn2.Margin = new System.Windows.Forms.Padding(4);
             this.calcBtn2.Name = "calcBtn2";
             this.calcBtn2.Size = new System.Drawing.Size(92, 79);
             this.calcBtn2.TabIndex = 2;
@@ -1206,7 +1304,7 @@
             this.textEditor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textEditor.Controls.Add(this.panel2);
             this.textEditor.Location = new System.Drawing.Point(8, 39);
-            this.textEditor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textEditor.Margin = new System.Windows.Forms.Padding(4);
             this.textEditor.Name = "textEditor";
             this.textEditor.Size = new System.Drawing.Size(1586, 841);
             this.textEditor.TabIndex = 2;
@@ -1218,16 +1316,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel2.Controls.Add(this.helpBtnTextEditor);
-            this.panel2.Controls.Add(this.helpPanelTexteditor);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.btnUndo);
-            this.panel2.Controls.Add(this.btnRedo);
             this.panel2.Controls.Add(this.btnRandomStyle);
-            this.panel2.Controls.Add(this.btnWritingPrompt);
-            this.panel2.Controls.Add(this.richTextBox);
-            this.panel2.Controls.Add(this.btnOpenFile);
-            this.panel2.Controls.Add(this.btnSave);
             this.panel2.Controls.Add(this.textColor6);
             this.panel2.Controls.Add(this.textColor5);
             this.panel2.Controls.Add(this.textColor4);
@@ -1240,17 +1329,155 @@
             this.panel2.Controls.Add(this.backColor3);
             this.panel2.Controls.Add(this.backColor2);
             this.panel2.Controls.Add(this.backColor1);
-            this.panel2.Controls.Add(this.trackBar1);
-            this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.helpBtnTextEditor);
+            this.panel2.Controls.Add(this.helpPanelTexteditor);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.btnUndo);
+            this.panel2.Controls.Add(this.btnRedo);
+            this.panel2.Controls.Add(this.btnWritingPrompt);
+            this.panel2.Controls.Add(this.richTextBox);
+            this.panel2.Controls.Add(this.btnOpenFile);
+            this.panel2.Controls.Add(this.btnSave);
+            this.panel2.Controls.Add(this.trackBar1);
+            this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.fontList);
             this.panel2.Location = new System.Drawing.Point(-8, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1594, 838);
             this.panel2.TabIndex = 3;
+            // 
+            // helpBtnTextEditor
+            // 
+            this.helpBtnTextEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.helpBtnTextEditor.BackColor = System.Drawing.Color.Transparent;
+            this.helpBtnTextEditor.BackgroundImage = global::TermOneProjectCardiffMet.Properties.Resources.help;
+            this.helpBtnTextEditor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.helpBtnTextEditor.FlatAppearance.BorderSize = 0;
+            this.helpBtnTextEditor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.helpBtnTextEditor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.helpBtnTextEditor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.helpBtnTextEditor.ForeColor = System.Drawing.Color.Transparent;
+            this.helpBtnTextEditor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.helpBtnTextEditor.Location = new System.Drawing.Point(1512, 0);
+            this.helpBtnTextEditor.Margin = new System.Windows.Forms.Padding(6);
+            this.helpBtnTextEditor.Name = "helpBtnTextEditor";
+            this.helpBtnTextEditor.Size = new System.Drawing.Size(82, 73);
+            this.helpBtnTextEditor.TabIndex = 36;
+            this.helpBtnTextEditor.UseCompatibleTextRendering = true;
+            this.helpBtnTextEditor.UseVisualStyleBackColor = false;
+            this.helpBtnTextEditor.Click += new System.EventHandler(this.helpBtnTextEditor_Click);
+            // 
+            // helpPanelTexteditor
+            // 
+            this.helpPanelTexteditor.BackColor = System.Drawing.Color.White;
+            this.helpPanelTexteditor.Controls.Add(this.btnCloseHelpText);
+            this.helpPanelTexteditor.Controls.Add(this.label15);
+            this.helpPanelTexteditor.Controls.Add(this.label16);
+            this.helpPanelTexteditor.Controls.Add(this.pictureBox8);
+            this.helpPanelTexteditor.Controls.Add(this.pictureBox13);
+            this.helpPanelTexteditor.Controls.Add(this.pictureBox7);
+            this.helpPanelTexteditor.Controls.Add(this.pictureBox14);
+            this.helpPanelTexteditor.Location = new System.Drawing.Point(46, 262);
+            this.helpPanelTexteditor.Name = "helpPanelTexteditor";
+            this.helpPanelTexteditor.Size = new System.Drawing.Size(966, 442);
+            this.helpPanelTexteditor.TabIndex = 35;
+            this.helpPanelTexteditor.Visible = false;
+            // 
+            // btnCloseHelpText
+            // 
+            this.btnCloseHelpText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCloseHelpText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
+            this.btnCloseHelpText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseHelpText.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseHelpText.ForeColor = System.Drawing.Color.White;
+            this.btnCloseHelpText.Location = new System.Drawing.Point(748, 382);
+            this.btnCloseHelpText.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCloseHelpText.Name = "btnCloseHelpText";
+            this.btnCloseHelpText.Size = new System.Drawing.Size(200, 54);
+            this.btnCloseHelpText.TabIndex = 35;
+            this.btnCloseHelpText.Text = "Close help";
+            this.btnCloseHelpText.UseVisualStyleBackColor = false;
+            this.btnCloseHelpText.Click += new System.EventHandler(this.btnCloseHelpText_Click);
+            // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.BackColor = System.Drawing.Color.White;
+            this.label15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.label15.Location = new System.Drawing.Point(15, 54);
+            this.label15.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label15.Name = "label15";
+            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label15.Size = new System.Drawing.Size(212, 330);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "The blue buttons change the text. \'Get Idea\' starts your story. The blue buttons " +
+    "let you save and open stories.";
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.Color.White;
+            this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.label16.Location = new System.Drawing.Point(768, 28);
+            this.label16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label16.Name = "label16";
+            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label16.Size = new System.Drawing.Size(171, 263);
+            this.label16.TabIndex = 34;
+            this.label16.Text = "Use the tools on the right to change the style of the text. Or make it random!";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Image = global::TermOneProjectCardiffMet.Properties.Resources.pico1;
+            this.pictureBox8.Location = new System.Drawing.Point(326, 250);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(157, 168);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 29;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox13.Image = global::TermOneProjectCardiffMet.Properties.Resources.megSpeechTall;
+            this.pictureBox13.Location = new System.Drawing.Point(673, -103);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(283, 521);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 33;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = global::TermOneProjectCardiffMet.Properties.Resources.picoSpeechTall;
+            this.pictureBox7.Location = new System.Drawing.Point(7, 19);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(318, 384);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 30;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox14.Image = global::TermOneProjectCardiffMet.Properties.Resources.meg;
+            this.pictureBox14.Location = new System.Drawing.Point(490, 135);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(180, 301);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 32;
+            this.pictureBox14.TabStop = false;
             // 
             // label3
             // 
@@ -1270,7 +1497,7 @@
             this.btnUndo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUndo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUndo.Location = new System.Drawing.Point(222, 731);
-            this.btnUndo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUndo.Margin = new System.Windows.Forms.Padding(4);
             this.btnUndo.Name = "btnUndo";
             this.btnUndo.Size = new System.Drawing.Size(170, 58);
             this.btnUndo.TabIndex = 27;
@@ -1284,7 +1511,7 @@
             this.btnRedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRedo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRedo.Location = new System.Drawing.Point(398, 731);
-            this.btnRedo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRedo.Margin = new System.Windows.Forms.Padding(4);
             this.btnRedo.Name = "btnRedo";
             this.btnRedo.Size = new System.Drawing.Size(170, 58);
             this.btnRedo.TabIndex = 26;
@@ -1299,7 +1526,7 @@
             this.btnRandomStyle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
             this.btnRandomStyle.ForeColor = System.Drawing.Color.White;
             this.btnRandomStyle.Location = new System.Drawing.Point(1080, 731);
-            this.btnRandomStyle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRandomStyle.Margin = new System.Windows.Forms.Padding(4);
             this.btnRandomStyle.Name = "btnRandomStyle";
             this.btnRandomStyle.Size = new System.Drawing.Size(432, 58);
             this.btnRandomStyle.TabIndex = 25;
@@ -1313,7 +1540,7 @@
             this.btnWritingPrompt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWritingPrompt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWritingPrompt.Location = new System.Drawing.Point(46, 731);
-            this.btnWritingPrompt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWritingPrompt.Margin = new System.Windows.Forms.Padding(4);
             this.btnWritingPrompt.Name = "btnWritingPrompt";
             this.btnWritingPrompt.Size = new System.Drawing.Size(170, 58);
             this.btnWritingPrompt.TabIndex = 24;
@@ -1325,7 +1552,7 @@
             // 
             this.richTextBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
             this.richTextBox.Location = new System.Drawing.Point(46, 131);
-            this.richTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox.Name = "richTextBox";
             this.richTextBox.Size = new System.Drawing.Size(966, 585);
             this.richTextBox.TabIndex = 4;
@@ -1340,7 +1567,7 @@
             this.btnOpenFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenFile.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpenFile.Location = new System.Drawing.Point(846, 731);
-            this.btnOpenFile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOpenFile.Margin = new System.Windows.Forms.Padding(4);
             this.btnOpenFile.Name = "btnOpenFile";
             this.btnOpenFile.Size = new System.Drawing.Size(170, 58);
             this.btnOpenFile.TabIndex = 23;
@@ -1354,7 +1581,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(668, 731);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(170, 58);
             this.btnSave.TabIndex = 4;
@@ -1365,8 +1592,8 @@
             // textColor6
             // 
             this.textColor6.BackColor = System.Drawing.Color.Black;
-            this.textColor6.Location = new System.Drawing.Point(1446, 662);
-            this.textColor6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textColor6.Location = new System.Drawing.Point(1444, 648);
+            this.textColor6.Margin = new System.Windows.Forms.Padding(4);
             this.textColor6.Name = "textColor6";
             this.textColor6.Size = new System.Drawing.Size(68, 54);
             this.textColor6.TabIndex = 22;
@@ -1376,8 +1603,8 @@
             // textColor5
             // 
             this.textColor5.BackColor = System.Drawing.Color.Green;
-            this.textColor5.Location = new System.Drawing.Point(1372, 662);
-            this.textColor5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textColor5.Location = new System.Drawing.Point(1370, 648);
+            this.textColor5.Margin = new System.Windows.Forms.Padding(4);
             this.textColor5.Name = "textColor5";
             this.textColor5.Size = new System.Drawing.Size(68, 54);
             this.textColor5.TabIndex = 21;
@@ -1387,8 +1614,8 @@
             // textColor4
             // 
             this.textColor4.BackColor = System.Drawing.Color.Yellow;
-            this.textColor4.Location = new System.Drawing.Point(1298, 662);
-            this.textColor4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textColor4.Location = new System.Drawing.Point(1296, 648);
+            this.textColor4.Margin = new System.Windows.Forms.Padding(4);
             this.textColor4.Name = "textColor4";
             this.textColor4.Size = new System.Drawing.Size(68, 54);
             this.textColor4.TabIndex = 20;
@@ -1398,8 +1625,8 @@
             // textColor3
             // 
             this.textColor3.BackColor = System.Drawing.Color.Blue;
-            this.textColor3.Location = new System.Drawing.Point(1226, 662);
-            this.textColor3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textColor3.Location = new System.Drawing.Point(1224, 648);
+            this.textColor3.Margin = new System.Windows.Forms.Padding(4);
             this.textColor3.Name = "textColor3";
             this.textColor3.Size = new System.Drawing.Size(68, 54);
             this.textColor3.TabIndex = 19;
@@ -1409,8 +1636,8 @@
             // textColor2
             // 
             this.textColor2.BackColor = System.Drawing.Color.Red;
-            this.textColor2.Location = new System.Drawing.Point(1154, 662);
-            this.textColor2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textColor2.Location = new System.Drawing.Point(1152, 648);
+            this.textColor2.Margin = new System.Windows.Forms.Padding(4);
             this.textColor2.Name = "textColor2";
             this.textColor2.Size = new System.Drawing.Size(68, 54);
             this.textColor2.TabIndex = 18;
@@ -1420,8 +1647,8 @@
             // textColor1
             // 
             this.textColor1.BackColor = System.Drawing.Color.White;
-            this.textColor1.Location = new System.Drawing.Point(1080, 662);
-            this.textColor1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textColor1.Location = new System.Drawing.Point(1078, 648);
+            this.textColor1.Margin = new System.Windows.Forms.Padding(4);
             this.textColor1.Name = "textColor1";
             this.textColor1.Size = new System.Drawing.Size(68, 54);
             this.textColor1.TabIndex = 17;
@@ -1431,8 +1658,8 @@
             // backColor6
             // 
             this.backColor6.BackColor = System.Drawing.Color.Black;
-            this.backColor6.Location = new System.Drawing.Point(1446, 550);
-            this.backColor6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backColor6.Location = new System.Drawing.Point(1444, 536);
+            this.backColor6.Margin = new System.Windows.Forms.Padding(4);
             this.backColor6.Name = "backColor6";
             this.backColor6.Size = new System.Drawing.Size(68, 54);
             this.backColor6.TabIndex = 16;
@@ -1442,8 +1669,8 @@
             // backColor5
             // 
             this.backColor5.BackColor = System.Drawing.Color.Green;
-            this.backColor5.Location = new System.Drawing.Point(1372, 550);
-            this.backColor5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backColor5.Location = new System.Drawing.Point(1370, 536);
+            this.backColor5.Margin = new System.Windows.Forms.Padding(4);
             this.backColor5.Name = "backColor5";
             this.backColor5.Size = new System.Drawing.Size(68, 54);
             this.backColor5.TabIndex = 15;
@@ -1453,8 +1680,8 @@
             // backColor4
             // 
             this.backColor4.BackColor = System.Drawing.Color.Yellow;
-            this.backColor4.Location = new System.Drawing.Point(1298, 550);
-            this.backColor4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backColor4.Location = new System.Drawing.Point(1296, 536);
+            this.backColor4.Margin = new System.Windows.Forms.Padding(4);
             this.backColor4.Name = "backColor4";
             this.backColor4.Size = new System.Drawing.Size(68, 54);
             this.backColor4.TabIndex = 14;
@@ -1464,8 +1691,8 @@
             // backColor3
             // 
             this.backColor3.BackColor = System.Drawing.Color.Blue;
-            this.backColor3.Location = new System.Drawing.Point(1226, 550);
-            this.backColor3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backColor3.Location = new System.Drawing.Point(1224, 536);
+            this.backColor3.Margin = new System.Windows.Forms.Padding(4);
             this.backColor3.Name = "backColor3";
             this.backColor3.Size = new System.Drawing.Size(68, 54);
             this.backColor3.TabIndex = 13;
@@ -1475,8 +1702,8 @@
             // backColor2
             // 
             this.backColor2.BackColor = System.Drawing.Color.Red;
-            this.backColor2.Location = new System.Drawing.Point(1154, 550);
-            this.backColor2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backColor2.Location = new System.Drawing.Point(1152, 536);
+            this.backColor2.Margin = new System.Windows.Forms.Padding(4);
             this.backColor2.Name = "backColor2";
             this.backColor2.Size = new System.Drawing.Size(68, 54);
             this.backColor2.TabIndex = 12;
@@ -1487,8 +1714,8 @@
             // 
             this.backColor1.BackColor = System.Drawing.Color.White;
             this.backColor1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backColor1.Location = new System.Drawing.Point(1080, 550);
-            this.backColor1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backColor1.Location = new System.Drawing.Point(1078, 536);
+            this.backColor1.Margin = new System.Windows.Forms.Padding(4);
             this.backColor1.Name = "backColor1";
             this.backColor1.Size = new System.Drawing.Size(68, 54);
             this.backColor1.TabIndex = 11;
@@ -1497,8 +1724,8 @@
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(1078, 427);
-            this.trackBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trackBar1.Location = new System.Drawing.Point(1075, 438);
+            this.trackBar1.Margin = new System.Windows.Forms.Padding(4);
             this.trackBar1.Maximum = 36;
             this.trackBar1.Minimum = 8;
             this.trackBar1.Name = "trackBar1";
@@ -1513,7 +1740,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label7.Location = new System.Drawing.Point(1074, 387);
+            this.label7.Location = new System.Drawing.Point(1074, 397);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(270, 37);
@@ -1525,7 +1752,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label6.Location = new System.Drawing.Point(1074, 621);
+            this.label6.Location = new System.Drawing.Point(1072, 607);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(307, 37);
@@ -1537,7 +1764,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label5.Location = new System.Drawing.Point(1070, 512);
+            this.label5.Location = new System.Drawing.Point(1068, 498);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(436, 37);
@@ -1573,7 +1800,7 @@
             "Times New Roman",
             "Verdana"});
             this.fontList.Location = new System.Drawing.Point(1080, 171);
-            this.fontList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fontList.Margin = new System.Windows.Forms.Padding(4);
             this.fontList.Name = "fontList";
             this.fontList.Size = new System.Drawing.Size(418, 204);
             this.fontList.TabIndex = 3;
@@ -1595,134 +1822,18 @@
             // 
             this.openFileDialog.FileName = "openFileDialog1";
             // 
-            // label15
+            // megBubble1
             // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
-            this.label15.Location = new System.Drawing.Point(15, 88);
-            this.label15.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label15.Name = "label15";
-            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label15.Size = new System.Drawing.Size(212, 296);
-            this.label15.TabIndex = 31;
-            this.label15.Text = "The blue buttons change the text. \'Get Idea\' starts your story. The blue buttons " +
-    "let you save and open stories.";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox7.BackColor = System.Drawing.Color.White;
-            this.pictureBox7.Image = global::TermOneProjectCardiffMet.Properties.Resources.picoSpeechTall;
-            this.pictureBox7.Location = new System.Drawing.Point(7, 77);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(6);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(318, 326);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 30;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox8.BackColor = System.Drawing.Color.White;
-            this.pictureBox8.Image = global::TermOneProjectCardiffMet.Properties.Resources.pico1;
-            this.pictureBox8.Location = new System.Drawing.Point(329, 250);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(6);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(168, 186);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 29;
-            this.pictureBox8.TabStop = false;
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.Color.White;
-            this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
-            this.label16.Location = new System.Drawing.Point(777, 28);
-            this.label16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label16.Name = "label16";
-            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label16.Size = new System.Drawing.Size(171, 263);
-            this.label16.TabIndex = 34;
-            this.label16.Text = "Use the tools on the right to change the style of the text. Or make it random!";
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackColor = System.Drawing.Color.White;
-            this.pictureBox13.Image = global::TermOneProjectCardiffMet.Properties.Resources.megSpeechTall;
-            this.pictureBox13.Location = new System.Drawing.Point(680, -103);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(6);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(283, 521);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 33;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackColor = System.Drawing.Color.White;
-            this.pictureBox14.Image = global::TermOneProjectCardiffMet.Properties.Resources.meg;
-            this.pictureBox14.Location = new System.Drawing.Point(498, 135);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(6);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(186, 301);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 32;
-            this.pictureBox14.TabStop = false;
-            // 
-            // helpPanelTexteditor
-            // 
-            this.helpPanelTexteditor.BackColor = System.Drawing.Color.White;
-            this.helpPanelTexteditor.Controls.Add(this.btnCloseHelpText);
-            this.helpPanelTexteditor.Controls.Add(this.label15);
-            this.helpPanelTexteditor.Controls.Add(this.label16);
-            this.helpPanelTexteditor.Controls.Add(this.pictureBox8);
-            this.helpPanelTexteditor.Controls.Add(this.pictureBox13);
-            this.helpPanelTexteditor.Controls.Add(this.pictureBox7);
-            this.helpPanelTexteditor.Controls.Add(this.pictureBox14);
-            this.helpPanelTexteditor.Location = new System.Drawing.Point(50, 274);
-            this.helpPanelTexteditor.Name = "helpPanelTexteditor";
-            this.helpPanelTexteditor.Size = new System.Drawing.Size(966, 442);
-            this.helpPanelTexteditor.TabIndex = 35;
-            this.helpPanelTexteditor.Visible = false;
-            // 
-            // helpBtnTextEditor
-            // 
-            this.helpBtnTextEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.helpBtnTextEditor.BackColor = System.Drawing.Color.Transparent;
-            this.helpBtnTextEditor.BackgroundImage = global::TermOneProjectCardiffMet.Properties.Resources.help;
-            this.helpBtnTextEditor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.helpBtnTextEditor.FlatAppearance.BorderSize = 0;
-            this.helpBtnTextEditor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.helpBtnTextEditor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.helpBtnTextEditor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.helpBtnTextEditor.ForeColor = System.Drawing.Color.Transparent;
-            this.helpBtnTextEditor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.helpBtnTextEditor.Location = new System.Drawing.Point(1512, 765);
-            this.helpBtnTextEditor.Margin = new System.Windows.Forms.Padding(6);
-            this.helpBtnTextEditor.Name = "helpBtnTextEditor";
-            this.helpBtnTextEditor.Size = new System.Drawing.Size(82, 73);
-            this.helpBtnTextEditor.TabIndex = 36;
-            this.helpBtnTextEditor.UseCompatibleTextRendering = true;
-            this.helpBtnTextEditor.UseVisualStyleBackColor = false;
-            this.helpBtnTextEditor.Click += new System.EventHandler(this.helpBtnTextEditor_Click);
-            // 
-            // btnCloseHelpText
-            // 
-            this.btnCloseHelpText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCloseHelpText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
-            this.btnCloseHelpText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloseHelpText.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseHelpText.ForeColor = System.Drawing.Color.White;
-            this.btnCloseHelpText.Location = new System.Drawing.Point(748, 382);
-            this.btnCloseHelpText.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCloseHelpText.Name = "btnCloseHelpText";
-            this.btnCloseHelpText.Size = new System.Drawing.Size(200, 54);
-            this.btnCloseHelpText.TabIndex = 35;
-            this.btnCloseHelpText.Text = "Close help";
-            this.btnCloseHelpText.UseVisualStyleBackColor = false;
-            this.btnCloseHelpText.Click += new System.EventHandler(this.btnCloseHelpText_Click);
+            this.megBubble1.BackColor = System.Drawing.Color.Transparent;
+            this.megBubble1.Image = global::TermOneProjectCardiffMet.Properties.Resources.megSpeech;
+            this.megBubble1.Location = new System.Drawing.Point(402, 189);
+            this.megBubble1.Margin = new System.Windows.Forms.Padding(6);
+            this.megBubble1.Name = "megBubble1";
+            this.megBubble1.Size = new System.Drawing.Size(671, 152);
+            this.megBubble1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.megBubble1.TabIndex = 25;
+            this.megBubble1.TabStop = false;
+            this.megBubble1.Visible = false;
             // 
             // KidsToolBox
             // 
@@ -1732,13 +1843,16 @@
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1588, 829);
             this.Name = "KidsToolBox";
             this.Text = "Kids ToolBox";
             this.tabControl1.ResumeLayout(false);
             this.welcomePage.ResumeLayout(false);
             this.welcomePage.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picoBubble1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.webBrowser.ResumeLayout(false);
@@ -1758,9 +1872,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgLinkDivide)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLinkTimes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLinkMinus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLinkPlus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgTimes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgMinus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgPlus)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -1768,12 +1882,13 @@
             this.textEditor.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.helpPanelTexteditor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            this.helpPanelTexteditor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.megBubble1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1877,11 +1992,10 @@
         private System.Windows.Forms.Button btnHelpCalculator;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox imgLinkPlus;
-        private System.Windows.Forms.PictureBox imgLinkTimes;
-        private System.Windows.Forms.PictureBox imgLinkMinus;
+        private System.Windows.Forms.PictureBox imgPlus;
+        private System.Windows.Forms.PictureBox imgTimes;
+        private System.Windows.Forms.PictureBox imgMinus;
         private System.Windows.Forms.PictureBox imgLinkDivide;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox14;
@@ -1891,5 +2005,13 @@
         private System.Windows.Forms.Button helpBtnTextEditor;
         private System.Windows.Forms.Panel helpPanelTexteditor;
         private System.Windows.Forms.Button btnCloseHelpText;
+        private System.Windows.Forms.Label picoSpeech1;
+        private System.Windows.Forms.PictureBox picoBubble1;
+        private System.Windows.Forms.Label megSpeech1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button btnHelpWelcome;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox megBubble1;
     }
 }
