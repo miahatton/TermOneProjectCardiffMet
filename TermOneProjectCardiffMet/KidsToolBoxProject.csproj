@@ -45,25 +45,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="EnterPinForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="EnterPinForm.Designer.cs">
+      <DependentUpon>EnterPinForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="ParentalControlForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="ParentalControlForm.Designer.cs">
+      <DependentUpon>ParentalControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KidsToolBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KidsToolBox.Designer.cs">
+      <DependentUpon>KidsToolBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveFileForm.Designer.cs">
+      <DependentUpon>SaveFileForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="EnterPinForm.resx">
+      <DependentUpon>EnterPinForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="KidsToolBox.resx">
+      <DependentUpon>KidsToolBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentalControlForm.resx">
+      <DependentUpon>ParentalControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveFileForm.resx">
+      <DependentUpon>SaveFileForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,6 +93,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\TermOneProjectCardiffMet.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\TermOneProjectCardiffMet.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -138,6 +158,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\divide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locked_padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock_unlocked.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,6 @@
 ﻿namespace TermOneProjectCardiffMet
 {
-    partial class MessageForm
+    partial class SaveFileForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MessageForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SaveFileForm));
             this.messageBtnYes = new System.Windows.Forms.Button();
             this.messageBtnNo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();

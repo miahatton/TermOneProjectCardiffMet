@@ -34,5 +34,66 @@ namespace TermOneProjectCardiffMet.Properties {
                 this["dontShow"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool parentalControlOn {
+            get {
+                return ((bool)(this["parentalControlOn"]));
+            }
+            set {
+                this["parentalControlOn"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool pinUnlocked {
+            get {
+                return ((bool)(this["pinUnlocked"]));
+            }
+            set {
+                this["pinUnlocked"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0000")]
+        public string pin {
+            get {
+                return ((string)(this["pin"]));
+            }
+            set {
+                this["pin"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
+            "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" />")]
+        public global::System.Collections.Specialized.StringCollection filteredWords {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["filteredWords"]));
+            }
+            set {
+                this["filteredWords"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("easy")]
+        public string difficulty {
+            get {
+                return ((string)(this["difficulty"]));
+            }
+            set {
+                this["difficulty"] = value;
+            }
+        }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TermOneProjectCardiffMet
 {
-    public partial class MessageForm : Form
+    public partial class SaveFileForm : Form
     {
-        public MessageForm()
+        public SaveFileForm()
         {
             InitializeComponent();
         }

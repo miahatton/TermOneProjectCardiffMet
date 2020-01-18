@@ -123,6 +123,16 @@ namespace TermOneProjectCardiffMet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap locked_padlock {
+            get {
+                object obj = ResourceManager.GetObject("locked_padlock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap meg {
             get {
                 object obj = ResourceManager.GetObject("meg", resourceCulture);
@@ -156,6 +166,16 @@ namespace TermOneProjectCardiffMet.Properties {
         internal static System.Drawing.Bitmap minus {
             get {
                 object obj = ResourceManager.GetObject("minus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap padlock_unlocked {
+            get {
+                object obj = ResourceManager.GetObject("padlock_unlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

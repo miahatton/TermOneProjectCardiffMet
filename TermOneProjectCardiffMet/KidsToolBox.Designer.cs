@@ -34,17 +34,18 @@
             this.welcomePage = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnHelpWelcome = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.welcomeLabel2 = new System.Windows.Forms.Label();
+            this.welcomeLabel3 = new System.Windows.Forms.Label();
             this.picoSpeech1 = new System.Windows.Forms.Label();
             this.megSpeech1 = new System.Windows.Forms.Label();
             this.picoBubble1 = new System.Windows.Forms.PictureBox();
+            this.megBubble1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnWriteStory = new System.Windows.Forms.Button();
             this.btnPlayNumbers = new System.Windows.Forms.Button();
             this.btnBrowseWeb = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.welcomeLabel = new System.Windows.Forms.Label();
             this.webBrowser = new System.Windows.Forms.TabPage();
             this.btnCloseBrowserHistory = new System.Windows.Forms.Button();
             this.helpPanelBrowser = new System.Windows.Forms.Panel();
@@ -58,6 +59,8 @@
             this.browserHistory = new System.Windows.Forms.ListBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelNotAllowed = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnHelpBrowser = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnGo = new System.Windows.Forms.Button();
@@ -84,10 +87,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ideaBox = new System.Windows.Forms.TextBox();
             this.btnIdeaGenerator = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
+            this.calculatorLabel2 = new System.Windows.Forms.Label();
             this.btnClearSums = new System.Windows.Forms.Button();
             this.calcHistory = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.calculatorLabel = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.calcBtn9 = new System.Windows.Forms.Button();
             this.calcBtnClear = new System.Windows.Forms.Button();
@@ -107,24 +110,8 @@
             this.calcBtn3 = new System.Windows.Forms.Button();
             this.calcBtn2 = new System.Windows.Forms.Button();
             this.textEditor = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.helpBtnTextEditor = new System.Windows.Forms.Button();
-            this.helpPanelTexteditor = new System.Windows.Forms.Panel();
-            this.btnCloseHelpText = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnUndo = new System.Windows.Forms.Button();
-            this.btnRedo = new System.Windows.Forms.Button();
+            this.textEditPanel = new System.Windows.Forms.Panel();
             this.btnRandomStyle = new System.Windows.Forms.Button();
-            this.btnWritingPrompt = new System.Windows.Forms.Button();
-            this.richTextBox = new System.Windows.Forms.RichTextBox();
-            this.btnOpenFile = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.textColor6 = new System.Windows.Forms.Button();
             this.textColor5 = new System.Windows.Forms.Button();
             this.textColor4 = new System.Windows.Forms.Button();
@@ -137,21 +124,58 @@
             this.backColor3 = new System.Windows.Forms.Button();
             this.backColor2 = new System.Windows.Forms.Button();
             this.backColor1 = new System.Windows.Forms.Button();
+            this.textColorLabel = new System.Windows.Forms.Label();
+            this.backColorLabel = new System.Windows.Forms.Label();
+            this.helpBtnTextEditor = new System.Windows.Forms.Button();
+            this.helpPanelTexteditor = new System.Windows.Forms.Panel();
+            this.btnCloseHelpText = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.storyLabel = new System.Windows.Forms.Label();
+            this.btnUndo = new System.Windows.Forms.Button();
+            this.btnRedo = new System.Windows.Forms.Button();
+            this.btnWritingPrompt = new System.Windows.Forms.Button();
+            this.richTextBox = new System.Windows.Forms.RichTextBox();
+            this.btnOpenFile = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.textSizeLabel = new System.Windows.Forms.Label();
+            this.fontLabel = new System.Windows.Forms.Label();
             this.fontList = new System.Windows.Forms.ListBox();
+            this.settings = new System.Windows.Forms.TabPage();
+            this.parentSettingsGroupBox = new System.Windows.Forms.GroupBox();
+            this.pictureBoxPadlock = new System.Windows.Forms.PictureBox();
+            this.labelControlsLocked = new System.Windows.Forms.Label();
+            this.btnParentalControlOn = new System.Windows.Forms.Button();
+            this.btnSetUpParentalControl = new System.Windows.Forms.Button();
+            this.btnParentalControlOff = new System.Windows.Forms.Button();
+            this.parentalControlsLabel = new System.Windows.Forms.Label();
+            this.creditsGroupBox = new System.Windows.Forms.GroupBox();
+            this.creditsLabel = new System.Windows.Forms.Label();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnClearBrowser = new System.Windows.Forms.Button();
+            this.btnWarningNo = new System.Windows.Forms.Button();
+            this.btnWarningYes = new System.Windows.Forms.Button();
+            this.WritingWarninglabel = new System.Windows.Forms.Label();
+            this.btnHard = new System.Windows.Forms.Button();
+            this.btnEasy = new System.Windows.Forms.Button();
+            this.difficultyLabel = new System.Windows.Forms.Label();
+            this.darkMode = new System.Windows.Forms.Button();
+            this.settingsLabel = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.megBubble1 = new System.Windows.Forms.PictureBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabControl1.SuspendLayout();
             this.welcomePage.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picoBubble1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.megBubble1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.webBrowser.SuspendLayout();
@@ -161,6 +185,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panelNotAllowed.SuspendLayout();
             this.calculator.SuspendLayout();
             this.helpPanelCalculator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -175,14 +200,18 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.textEditor.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.textEditPanel.SuspendLayout();
             this.helpPanelTexteditor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.megBubble1)).BeginInit();
+            this.settings.SuspendLayout();
+            this.parentSettingsGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPadlock)).BeginInit();
+            this.creditsGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -194,13 +223,14 @@
             this.tabControl1.Controls.Add(this.webBrowser);
             this.tabControl1.Controls.Add(this.calculator);
             this.tabControl1.Controls.Add(this.textEditor);
+            this.tabControl1.Controls.Add(this.settings);
             this.tabControl1.Location = new System.Drawing.Point(2, -2);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1602, 888);
             this.tabControl1.TabIndex = 0;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.TabControl1_SelectedIndexChanged);
             // 
             // welcomePage
             // 
@@ -215,7 +245,7 @@
             this.welcomePage.Controls.Add(this.btnWriteStory);
             this.welcomePage.Controls.Add(this.btnPlayNumbers);
             this.welcomePage.Controls.Add(this.btnBrowseWeb);
-            this.welcomePage.Controls.Add(this.label9);
+            this.welcomePage.Controls.Add(this.welcomeLabel);
             this.welcomePage.Location = new System.Drawing.Point(8, 39);
             this.welcomePage.Margin = new System.Windows.Forms.Padding(4);
             this.welcomePage.Name = "welcomePage";
@@ -226,8 +256,8 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.btnHelpWelcome);
-            this.panel6.Controls.Add(this.label12);
-            this.panel6.Controls.Add(this.label17);
+            this.panel6.Controls.Add(this.welcomeLabel2);
+            this.panel6.Controls.Add(this.welcomeLabel3);
             this.panel6.Location = new System.Drawing.Point(97, 665);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1379, 87);
@@ -252,33 +282,33 @@
             this.btnHelpWelcome.TabIndex = 19;
             this.btnHelpWelcome.UseCompatibleTextRendering = true;
             this.btnHelpWelcome.UseVisualStyleBackColor = false;
-            this.btnHelpWelcome.Click += new System.EventHandler(this.btnHelpWelcome_Click);
+            this.btnHelpWelcome.Click += new System.EventHandler(this.BtnHelpWelcome_Click);
             // 
-            // label12
+            // welcomeLabel2
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label12.Location = new System.Drawing.Point(10, 17);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(883, 50);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "If you need help using the tools, click the ";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.welcomeLabel2.AutoSize = true;
+            this.welcomeLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F);
+            this.welcomeLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.welcomeLabel2.Location = new System.Drawing.Point(10, 17);
+            this.welcomeLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.welcomeLabel2.Name = "welcomeLabel2";
+            this.welcomeLabel2.Size = new System.Drawing.Size(883, 50);
+            this.welcomeLabel2.TabIndex = 17;
+            this.welcomeLabel2.Text = "If you need help using the tools, click the ";
+            this.welcomeLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label17
+            // welcomeLabel3
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F);
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label17.Location = new System.Drawing.Point(960, 17);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(125, 50);
-            this.label17.TabIndex = 20;
-            this.label17.Text = "icon.";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.welcomeLabel3.AutoSize = true;
+            this.welcomeLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F);
+            this.welcomeLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.welcomeLabel3.Location = new System.Drawing.Point(960, 17);
+            this.welcomeLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.welcomeLabel3.Name = "welcomeLabel3";
+            this.welcomeLabel3.Size = new System.Drawing.Size(125, 50);
+            this.welcomeLabel3.TabIndex = 20;
+            this.welcomeLabel3.Text = "icon.";
+            this.welcomeLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picoSpeech1
             // 
@@ -322,6 +352,19 @@
             this.picoBubble1.TabStop = false;
             this.picoBubble1.Visible = false;
             // 
+            // megBubble1
+            // 
+            this.megBubble1.BackColor = System.Drawing.Color.Transparent;
+            this.megBubble1.Image = global::TermOneProjectCardiffMet.Properties.Resources.megSpeech;
+            this.megBubble1.Location = new System.Drawing.Point(402, 189);
+            this.megBubble1.Margin = new System.Windows.Forms.Padding(6);
+            this.megBubble1.Name = "megBubble1";
+            this.megBubble1.Size = new System.Drawing.Size(671, 152);
+            this.megBubble1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.megBubble1.TabIndex = 25;
+            this.megBubble1.TabStop = false;
+            this.megBubble1.Visible = false;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -361,7 +404,7 @@
             this.btnWriteStory.Text = "Write a story";
             this.toolTip.SetToolTip(this.btnWriteStory, "Open text editor");
             this.btnWriteStory.UseVisualStyleBackColor = false;
-            this.btnWriteStory.Click += new System.EventHandler(this.btnWriteStory_Click);
+            this.btnWriteStory.Click += new System.EventHandler(this.BtnWriteStory_Click);
             // 
             // btnPlayNumbers
             // 
@@ -377,7 +420,7 @@
             this.btnPlayNumbers.Text = "Play with numbers";
             this.toolTip.SetToolTip(this.btnPlayNumbers, "Open calculator");
             this.btnPlayNumbers.UseVisualStyleBackColor = false;
-            this.btnPlayNumbers.Click += new System.EventHandler(this.btnPlayNumbers_Click);
+            this.btnPlayNumbers.Click += new System.EventHandler(this.BtnPlayNumbers_Click);
             // 
             // btnBrowseWeb
             // 
@@ -393,20 +436,20 @@
             this.btnBrowseWeb.Text = "Browse the web";
             this.toolTip.SetToolTip(this.btnBrowseWeb, "Open web browser");
             this.btnBrowseWeb.UseVisualStyleBackColor = false;
-            this.btnBrowseWeb.Click += new System.EventHandler(this.btnBrowseWeb_Click);
+            this.btnBrowseWeb.Click += new System.EventHandler(this.BtnBrowseWeb_Click);
             // 
-            // label9
+            // welcomeLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label9.Location = new System.Drawing.Point(82, 71);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(1383, 87);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Welcome! What would you like to do?";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.welcomeLabel.AutoSize = true;
+            this.welcomeLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.welcomeLabel.Location = new System.Drawing.Point(82, 71);
+            this.welcomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.welcomeLabel.Name = "welcomeLabel";
+            this.welcomeLabel.Size = new System.Drawing.Size(1383, 87);
+            this.welcomeLabel.TabIndex = 5;
+            this.welcomeLabel.Text = "Welcome! What would you like to do?";
+            this.welcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // webBrowser
             // 
@@ -438,9 +481,10 @@
             this.btnCloseBrowserHistory.Size = new System.Drawing.Size(220, 50);
             this.btnCloseBrowserHistory.TabIndex = 26;
             this.btnCloseBrowserHistory.Text = "Close history";
+            this.toolTip.SetToolTip(this.btnCloseBrowserHistory, "Close browser history");
             this.btnCloseBrowserHistory.UseVisualStyleBackColor = false;
             this.btnCloseBrowserHistory.Visible = false;
-            this.btnCloseBrowserHistory.Click += new System.EventHandler(this.btnCloseBrowserHistory_Click);
+            this.btnCloseBrowserHistory.Click += new System.EventHandler(this.BtnCloseBrowserHistory_Click);
             // 
             // helpPanelBrowser
             // 
@@ -473,8 +517,9 @@
             this.btnCloseHelpBrowser.Size = new System.Drawing.Size(220, 73);
             this.btnCloseHelpBrowser.TabIndex = 25;
             this.btnCloseHelpBrowser.Text = "Close help";
+            this.toolTip.SetToolTip(this.btnCloseHelpBrowser, "Close help");
             this.btnCloseHelpBrowser.UseVisualStyleBackColor = false;
-            this.btnCloseHelpBrowser.Click += new System.EventHandler(this.btnCloseHelpBrowser_Click);
+            this.btnCloseHelpBrowser.Click += new System.EventHandler(this.BtnCloseHelpBrowser_Click);
             // 
             // label11
             // 
@@ -565,7 +610,7 @@
             this.browserHistory.Size = new System.Drawing.Size(1258, 522);
             this.browserHistory.TabIndex = 4;
             this.browserHistory.Visible = false;
-            this.browserHistory.SelectedIndexChanged += new System.EventHandler(this.browserHistory_SelectedIndexChanged);
+            this.browserHistory.SelectedIndexChanged += new System.EventHandler(this.BrowserHistory_SelectedIndexChanged);
             // 
             // webBrowser1
             // 
@@ -580,14 +625,15 @@
             this.webBrowser1.Size = new System.Drawing.Size(1594, 729);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("https://www.ecosia.org/?c=en", System.UriKind.Absolute);
-            this.webBrowser1.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.webBrowser1_Navigated);
-            this.webBrowser1.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.webBrowser1_PreviewKeyDown);
+            this.webBrowser1.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.WebBrowser1_Navigated);
+            this.webBrowser1.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.WebBrowser1_PreviewKeyDown);
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.Controls.Add(this.panelNotAllowed);
             this.panel1.Controls.Add(this.btnHelpBrowser);
             this.panel1.Controls.Add(this.btnRefresh);
             this.panel1.Controls.Add(this.btnGo);
@@ -600,6 +646,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1550, 102);
             this.panel1.TabIndex = 3;
+            // 
+            // panelNotAllowed
+            // 
+            this.panelNotAllowed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelNotAllowed.BackColor = System.Drawing.Color.Red;
+            this.panelNotAllowed.Controls.Add(this.label1);
+            this.panelNotAllowed.Location = new System.Drawing.Point(522, 21);
+            this.panelNotAllowed.Name = "panelNotAllowed";
+            this.panelNotAllowed.Size = new System.Drawing.Size(400, 45);
+            this.panelNotAllowed.TabIndex = 27;
+            this.panelNotAllowed.Visible = false;
+            this.panelNotAllowed.Click += new System.EventHandler(this.PanelNotAllowed_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.label1.Location = new System.Drawing.Point(17, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(370, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "That website is not allowed";
+            this.toolTip.SetToolTip(this.label1, "Parental controls are switched on");
             // 
             // btnHelpBrowser
             // 
@@ -618,9 +687,10 @@
             this.btnHelpBrowser.Name = "btnHelpBrowser";
             this.btnHelpBrowser.Size = new System.Drawing.Size(82, 73);
             this.btnHelpBrowser.TabIndex = 18;
+            this.toolTip.SetToolTip(this.btnHelpBrowser, "Open help");
             this.btnHelpBrowser.UseCompatibleTextRendering = true;
             this.btnHelpBrowser.UseVisualStyleBackColor = false;
-            this.btnHelpBrowser.Click += new System.EventHandler(this.btnHelpBrowser_Click);
+            this.btnHelpBrowser.Click += new System.EventHandler(this.BtnHelpBrowser_Click);
             // 
             // btnRefresh
             // 
@@ -637,7 +707,7 @@
             this.btnRefresh.TabIndex = 17;
             this.toolTip.SetToolTip(this.btnRefresh, "Refresh the page");
             this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            this.btnRefresh.Click += new System.EventHandler(this.BtnRefresh_Click);
             // 
             // btnGo
             // 
@@ -652,8 +722,9 @@
             this.btnGo.Size = new System.Drawing.Size(88, 73);
             this.btnGo.TabIndex = 16;
             this.btnGo.Text = "GO";
+            this.toolTip.SetToolTip(this.btnGo, "Go to web page");
             this.btnGo.UseVisualStyleBackColor = false;
-            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
+            this.btnGo.Click += new System.EventHandler(this.BtnGo_Click);
             // 
             // btnHistory
             // 
@@ -670,7 +741,7 @@
             this.btnHistory.TabIndex = 4;
             this.toolTip.SetToolTip(this.btnHistory, "See your history");
             this.btnHistory.UseVisualStyleBackColor = false;
-            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
+            this.btnHistory.Click += new System.EventHandler(this.BtnHistory_Click);
             // 
             // btnForward
             // 
@@ -687,7 +758,7 @@
             this.btnForward.TabIndex = 3;
             this.toolTip.SetToolTip(this.btnForward, "Go forward");
             this.btnForward.UseVisualStyleBackColor = false;
-            this.btnForward.Click += new System.EventHandler(this.btnForward_Click);
+            this.btnForward.Click += new System.EventHandler(this.BtnForward_Click);
             // 
             // webAddressBox
             // 
@@ -700,8 +771,9 @@
             this.webAddressBox.TabIndex = 2;
             this.webAddressBox.Text = "https://www.ecosia.org/";
             this.toolTip.SetToolTip(this.webAddressBox, "Enter web address");
-            this.webAddressBox.Enter += new System.EventHandler(this.btnGo_Click);
-            this.webAddressBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.webAddressBox_KeyDown);
+            this.webAddressBox.TextChanged += new System.EventHandler(this.WebAddressBox_TextChanged);
+            this.webAddressBox.Enter += new System.EventHandler(this.BtnGo_Click);
+            this.webAddressBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.WebAddressBox_KeyDown);
             // 
             // btnBack
             // 
@@ -719,7 +791,7 @@
             this.btnBack.TabIndex = 0;
             this.toolTip.SetToolTip(this.btnBack, "Go back");
             this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // calculator
             // 
@@ -730,10 +802,10 @@
             this.calculator.Controls.Add(this.panel4);
             this.calculator.Controls.Add(this.ideaBox);
             this.calculator.Controls.Add(this.btnIdeaGenerator);
-            this.calculator.Controls.Add(this.label8);
+            this.calculator.Controls.Add(this.calculatorLabel2);
             this.calculator.Controls.Add(this.btnClearSums);
             this.calculator.Controls.Add(this.calcHistory);
-            this.calculator.Controls.Add(this.label1);
+            this.calculator.Controls.Add(this.calculatorLabel);
             this.calculator.Controls.Add(this.panel3);
             this.calculator.Location = new System.Drawing.Point(8, 39);
             this.calculator.Margin = new System.Windows.Forms.Padding(4);
@@ -760,9 +832,10 @@
             this.btnHelpCalculator.Name = "btnHelpCalculator";
             this.btnHelpCalculator.Size = new System.Drawing.Size(82, 77);
             this.btnHelpCalculator.TabIndex = 21;
+            this.toolTip.SetToolTip(this.btnHelpCalculator, "Get help");
             this.btnHelpCalculator.UseCompatibleTextRendering = true;
             this.btnHelpCalculator.UseVisualStyleBackColor = false;
-            this.btnHelpCalculator.Click += new System.EventHandler(this.btnHelpCalculator_Click);
+            this.btnHelpCalculator.Click += new System.EventHandler(this.BtnHelpCalculator_Click);
             // 
             // helpPanelCalculator
             // 
@@ -795,7 +868,7 @@
             this.btnCloseHelpCalc.TabIndex = 25;
             this.btnCloseHelpCalc.Text = "Close help";
             this.btnCloseHelpCalc.UseVisualStyleBackColor = false;
-            this.btnCloseHelpCalc.Click += new System.EventHandler(this.btnCloseHelpCalc_Click);
+            this.btnCloseHelpCalc.Click += new System.EventHandler(this.BtnCloseHelpCalc_Click);
             // 
             // label13
             // 
@@ -981,19 +1054,19 @@
             this.btnIdeaGenerator.TabIndex = 20;
             this.btnIdeaGenerator.Text = "Get Ideas";
             this.btnIdeaGenerator.UseVisualStyleBackColor = false;
-            this.btnIdeaGenerator.Click += new System.EventHandler(this.btnIdeaGenerator_Click);
+            this.btnIdeaGenerator.Click += new System.EventHandler(this.BtnIdeaGenerator_Click);
             // 
-            // label8
+            // calculatorLabel2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label8.Location = new System.Drawing.Point(38, 669);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(752, 44);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Click below to get ideas for sums to try:";
+            this.calculatorLabel2.AutoSize = true;
+            this.calculatorLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F);
+            this.calculatorLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.calculatorLabel2.Location = new System.Drawing.Point(38, 669);
+            this.calculatorLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.calculatorLabel2.Name = "calculatorLabel2";
+            this.calculatorLabel2.Size = new System.Drawing.Size(752, 44);
+            this.calculatorLabel2.TabIndex = 19;
+            this.calculatorLabel2.Text = "Click below to get ideas for sums to try:";
             // 
             // btnClearSums
             // 
@@ -1007,14 +1080,15 @@
             this.btnClearSums.Size = new System.Drawing.Size(394, 54);
             this.btnClearSums.TabIndex = 18;
             this.btnClearSums.Text = "Clear sums";
+            this.toolTip.SetToolTip(this.btnClearSums, "Erase your history");
             this.btnClearSums.UseVisualStyleBackColor = false;
-            this.btnClearSums.Click += new System.EventHandler(this.calcBtnClearHistory);
+            this.btnClearSums.Click += new System.EventHandler(this.CalcBtnClearHistory);
             // 
             // calcHistory
             // 
             this.calcHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
             this.calcHistory.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calcHistory.ForeColor = System.Drawing.Color.White;
+            this.calcHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.calcHistory.Location = new System.Drawing.Point(680, 183);
             this.calcHistory.Margin = new System.Windows.Forms.Padding(4);
             this.calcHistory.Multiline = true;
@@ -1022,18 +1096,19 @@
             this.calcHistory.ReadOnly = true;
             this.calcHistory.Size = new System.Drawing.Size(390, 377);
             this.calcHistory.TabIndex = 8;
+            this.toolTip.SetToolTip(this.calcHistory, "Your calculations will show here");
             // 
-            // label1
+            // calculatorLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label1.Location = new System.Drawing.Point(32, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(923, 87);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Let\'s play with numbers!";
+            this.calculatorLabel.AutoSize = true;
+            this.calculatorLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculatorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.calculatorLabel.Location = new System.Drawing.Point(32, 25);
+            this.calculatorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.calculatorLabel.Name = "calculatorLabel";
+            this.calculatorLabel.Size = new System.Drawing.Size(923, 87);
+            this.calculatorLabel.TabIndex = 4;
+            this.calculatorLabel.Text = "Let\'s play with numbers!";
             // 
             // panel3
             // 
@@ -1073,7 +1148,7 @@
             this.calcBtn9.TabIndex = 9;
             this.calcBtn9.Text = "9";
             this.calcBtn9.UseVisualStyleBackColor = false;
-            this.calcBtn9.Click += new System.EventHandler(this.calcBtn9_Click);
+            this.calcBtn9.Click += new System.EventHandler(this.CalcNumberBtn_Click);
             // 
             // calcBtnClear
             // 
@@ -1086,8 +1161,9 @@
             this.calcBtnClear.Size = new System.Drawing.Size(190, 79);
             this.calcBtnClear.TabIndex = 17;
             this.calcBtnClear.Text = "Clear";
+            this.toolTip.SetToolTip(this.calcBtnClear, "Clear the calculator");
             this.calcBtnClear.UseVisualStyleBackColor = false;
-            this.calcBtnClear.Click += new System.EventHandler(this.calcBtnClear_Click);
+            this.calcBtnClear.Click += new System.EventHandler(this.CalcBtnClear_Click);
             // 
             // calcDisplay
             // 
@@ -1111,7 +1187,7 @@
             this.calcBtn8.TabIndex = 8;
             this.calcBtn8.Text = "8";
             this.calcBtn8.UseVisualStyleBackColor = false;
-            this.calcBtn8.Click += new System.EventHandler(this.calcBtn8_Click);
+            this.calcBtn8.Click += new System.EventHandler(this.CalcNumberBtn_Click);
             // 
             // calcBtnDivide
             // 
@@ -1126,7 +1202,7 @@
             this.calcBtnDivide.Text = "÷";
             this.toolTip.SetToolTip(this.calcBtnDivide, "Divide by the number");
             this.calcBtnDivide.UseVisualStyleBackColor = false;
-            this.calcBtnDivide.Click += new System.EventHandler(this.calcBtnDivide_Click);
+            this.calcBtnDivide.Click += new System.EventHandler(this.CalcBtnOperator_Click);
             // 
             // calcBtnEquals
             // 
@@ -1139,8 +1215,9 @@
             this.calcBtnEquals.Size = new System.Drawing.Size(190, 79);
             this.calcBtnEquals.TabIndex = 15;
             this.calcBtnEquals.Text = "=";
+            this.toolTip.SetToolTip(this.calcBtnEquals, "Equals: Get the answer");
             this.calcBtnEquals.UseVisualStyleBackColor = false;
-            this.calcBtnEquals.Click += new System.EventHandler(this.calcBtnEquals_Click);
+            this.calcBtnEquals.Click += new System.EventHandler(this.CalcBtnEquals_Click);
             // 
             // calcBtn7
             // 
@@ -1154,7 +1231,7 @@
             this.calcBtn7.TabIndex = 7;
             this.calcBtn7.Text = "7";
             this.calcBtn7.UseVisualStyleBackColor = false;
-            this.calcBtn7.Click += new System.EventHandler(this.calcBtn7_Click);
+            this.calcBtn7.Click += new System.EventHandler(this.CalcNumberBtn_Click);
             // 
             // calcBtnMultiply
             // 
@@ -1169,7 +1246,7 @@
             this.calcBtnMultiply.Text = "x";
             this.toolTip.SetToolTip(this.calcBtnMultiply, "Times the numbers together");
             this.calcBtnMultiply.UseVisualStyleBackColor = false;
-            this.calcBtnMultiply.Click += new System.EventHandler(this.calcBtnMultiply_Click);
+            this.calcBtnMultiply.Click += new System.EventHandler(this.CalcBtnOperator_Click);
             // 
             // calcBtnMinus
             // 
@@ -1184,7 +1261,7 @@
             this.calcBtnMinus.Text = "-";
             this.toolTip.SetToolTip(this.calcBtnMinus, "Take the number away");
             this.calcBtnMinus.UseVisualStyleBackColor = false;
-            this.calcBtnMinus.Click += new System.EventHandler(this.calcBtnMinus_Click);
+            this.calcBtnMinus.Click += new System.EventHandler(this.CalcBtnOperator_Click);
             // 
             // calcBtn6
             // 
@@ -1198,7 +1275,7 @@
             this.calcBtn6.TabIndex = 6;
             this.calcBtn6.Text = "6";
             this.calcBtn6.UseVisualStyleBackColor = false;
-            this.calcBtn6.Click += new System.EventHandler(this.calcBtn6_Click);
+            this.calcBtn6.Click += new System.EventHandler(this.CalcNumberBtn_Click);
             // 
             // calcBtnPlus
             // 
@@ -1213,7 +1290,7 @@
             this.calcBtnPlus.Text = "+";
             this.toolTip.SetToolTip(this.calcBtnPlus, "Add the numbers together");
             this.calcBtnPlus.UseVisualStyleBackColor = false;
-            this.calcBtnPlus.Click += new System.EventHandler(this.calcBtnPlus_Click);
+            this.calcBtnPlus.Click += new System.EventHandler(this.CalcBtnOperator_Click);
             // 
             // calcBtn0
             // 
@@ -1227,7 +1304,7 @@
             this.calcBtn0.TabIndex = 10;
             this.calcBtn0.Text = "0";
             this.calcBtn0.UseVisualStyleBackColor = false;
-            this.calcBtn0.Click += new System.EventHandler(this.calcBtn0_Click);
+            this.calcBtn0.Click += new System.EventHandler(this.CalcNumberBtn_Click);
             // 
             // calcBtn1
             // 
@@ -1241,7 +1318,7 @@
             this.calcBtn1.TabIndex = 1;
             this.calcBtn1.Text = "1";
             this.calcBtn1.UseVisualStyleBackColor = false;
-            this.calcBtn1.Click += new System.EventHandler(this.calcBtn1_Click);
+            this.calcBtn1.Click += new System.EventHandler(this.CalcNumberBtn_Click);
             // 
             // calcBtn5
             // 
@@ -1255,7 +1332,7 @@
             this.calcBtn5.TabIndex = 5;
             this.calcBtn5.Text = "5";
             this.calcBtn5.UseVisualStyleBackColor = false;
-            this.calcBtn5.Click += new System.EventHandler(this.calcBtn5_Click);
+            this.calcBtn5.Click += new System.EventHandler(this.CalcNumberBtn_Click);
             // 
             // calcBtn4
             // 
@@ -1269,7 +1346,7 @@
             this.calcBtn4.TabIndex = 4;
             this.calcBtn4.Text = "4";
             this.calcBtn4.UseVisualStyleBackColor = false;
-            this.calcBtn4.Click += new System.EventHandler(this.calcBtn4_Click);
+            this.calcBtn4.Click += new System.EventHandler(this.CalcNumberBtn_Click);
             // 
             // calcBtn3
             // 
@@ -1283,7 +1360,7 @@
             this.calcBtn3.TabIndex = 3;
             this.calcBtn3.Text = "3";
             this.calcBtn3.UseVisualStyleBackColor = false;
-            this.calcBtn3.Click += new System.EventHandler(this.calcBtn3_Click);
+            this.calcBtn3.Click += new System.EventHandler(this.CalcNumberBtn_Click);
             // 
             // calcBtn2
             // 
@@ -1297,12 +1374,12 @@
             this.calcBtn2.TabIndex = 2;
             this.calcBtn2.Text = "2";
             this.calcBtn2.UseVisualStyleBackColor = false;
-            this.calcBtn2.Click += new System.EventHandler(this.calcBtn2_Click);
+            this.calcBtn2.Click += new System.EventHandler(this.CalcNumberBtn_Click);
             // 
             // textEditor
             // 
             this.textEditor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textEditor.Controls.Add(this.panel2);
+            this.textEditor.Controls.Add(this.textEditPanel);
             this.textEditor.Location = new System.Drawing.Point(8, 39);
             this.textEditor.Margin = new System.Windows.Forms.Padding(4);
             this.textEditor.Name = "textEditor";
@@ -1310,45 +1387,228 @@
             this.textEditor.TabIndex = 2;
             this.textEditor.Text = "Write a story";
             // 
-            // panel2
+            // textEditPanel
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textEditPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel2.Controls.Add(this.btnRandomStyle);
-            this.panel2.Controls.Add(this.textColor6);
-            this.panel2.Controls.Add(this.textColor5);
-            this.panel2.Controls.Add(this.textColor4);
-            this.panel2.Controls.Add(this.textColor3);
-            this.panel2.Controls.Add(this.textColor2);
-            this.panel2.Controls.Add(this.textColor1);
-            this.panel2.Controls.Add(this.backColor6);
-            this.panel2.Controls.Add(this.backColor5);
-            this.panel2.Controls.Add(this.backColor4);
-            this.panel2.Controls.Add(this.backColor3);
-            this.panel2.Controls.Add(this.backColor2);
-            this.panel2.Controls.Add(this.backColor1);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.helpBtnTextEditor);
-            this.panel2.Controls.Add(this.helpPanelTexteditor);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.btnUndo);
-            this.panel2.Controls.Add(this.btnRedo);
-            this.panel2.Controls.Add(this.btnWritingPrompt);
-            this.panel2.Controls.Add(this.richTextBox);
-            this.panel2.Controls.Add(this.btnOpenFile);
-            this.panel2.Controls.Add(this.btnSave);
-            this.panel2.Controls.Add(this.trackBar1);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.fontList);
-            this.panel2.Location = new System.Drawing.Point(-8, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1594, 838);
-            this.panel2.TabIndex = 3;
+            this.textEditPanel.Controls.Add(this.btnRandomStyle);
+            this.textEditPanel.Controls.Add(this.textColor6);
+            this.textEditPanel.Controls.Add(this.textColor5);
+            this.textEditPanel.Controls.Add(this.textColor4);
+            this.textEditPanel.Controls.Add(this.textColor3);
+            this.textEditPanel.Controls.Add(this.textColor2);
+            this.textEditPanel.Controls.Add(this.textColor1);
+            this.textEditPanel.Controls.Add(this.backColor6);
+            this.textEditPanel.Controls.Add(this.backColor5);
+            this.textEditPanel.Controls.Add(this.backColor4);
+            this.textEditPanel.Controls.Add(this.backColor3);
+            this.textEditPanel.Controls.Add(this.backColor2);
+            this.textEditPanel.Controls.Add(this.backColor1);
+            this.textEditPanel.Controls.Add(this.textColorLabel);
+            this.textEditPanel.Controls.Add(this.backColorLabel);
+            this.textEditPanel.Controls.Add(this.helpBtnTextEditor);
+            this.textEditPanel.Controls.Add(this.helpPanelTexteditor);
+            this.textEditPanel.Controls.Add(this.storyLabel);
+            this.textEditPanel.Controls.Add(this.btnUndo);
+            this.textEditPanel.Controls.Add(this.btnRedo);
+            this.textEditPanel.Controls.Add(this.btnWritingPrompt);
+            this.textEditPanel.Controls.Add(this.richTextBox);
+            this.textEditPanel.Controls.Add(this.btnOpenFile);
+            this.textEditPanel.Controls.Add(this.btnSave);
+            this.textEditPanel.Controls.Add(this.trackBar1);
+            this.textEditPanel.Controls.Add(this.textSizeLabel);
+            this.textEditPanel.Controls.Add(this.fontLabel);
+            this.textEditPanel.Controls.Add(this.fontList);
+            this.textEditPanel.Location = new System.Drawing.Point(-8, 0);
+            this.textEditPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.textEditPanel.Name = "textEditPanel";
+            this.textEditPanel.Size = new System.Drawing.Size(1594, 838);
+            this.textEditPanel.TabIndex = 3;
+            // 
+            // btnRandomStyle
+            // 
+            this.btnRandomStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.btnRandomStyle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRandomStyle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.btnRandomStyle.ForeColor = System.Drawing.Color.White;
+            this.btnRandomStyle.Location = new System.Drawing.Point(1080, 731);
+            this.btnRandomStyle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRandomStyle.Name = "btnRandomStyle";
+            this.btnRandomStyle.Size = new System.Drawing.Size(432, 58);
+            this.btnRandomStyle.TabIndex = 25;
+            this.btnRandomStyle.Text = "Random Style";
+            this.btnRandomStyle.UseVisualStyleBackColor = false;
+            this.btnRandomStyle.Click += new System.EventHandler(this.BtnRandomStyle_Click);
+            // 
+            // textColor6
+            // 
+            this.textColor6.BackColor = System.Drawing.Color.Black;
+            this.textColor6.Location = new System.Drawing.Point(1444, 648);
+            this.textColor6.Margin = new System.Windows.Forms.Padding(4);
+            this.textColor6.Name = "textColor6";
+            this.textColor6.Size = new System.Drawing.Size(68, 54);
+            this.textColor6.TabIndex = 22;
+            this.toolTip.SetToolTip(this.textColor6, "Change text colour to black");
+            this.textColor6.UseVisualStyleBackColor = false;
+            this.textColor6.Click += new System.EventHandler(this.TextColorBtn_Click);
+            // 
+            // textColor5
+            // 
+            this.textColor5.BackColor = System.Drawing.Color.Green;
+            this.textColor5.Location = new System.Drawing.Point(1370, 648);
+            this.textColor5.Margin = new System.Windows.Forms.Padding(4);
+            this.textColor5.Name = "textColor5";
+            this.textColor5.Size = new System.Drawing.Size(68, 54);
+            this.textColor5.TabIndex = 21;
+            this.toolTip.SetToolTip(this.textColor5, "Change text colour to green");
+            this.textColor5.UseVisualStyleBackColor = false;
+            this.textColor5.Click += new System.EventHandler(this.TextColorBtn_Click);
+            // 
+            // textColor4
+            // 
+            this.textColor4.BackColor = System.Drawing.Color.Yellow;
+            this.textColor4.Location = new System.Drawing.Point(1296, 648);
+            this.textColor4.Margin = new System.Windows.Forms.Padding(4);
+            this.textColor4.Name = "textColor4";
+            this.textColor4.Size = new System.Drawing.Size(68, 54);
+            this.textColor4.TabIndex = 20;
+            this.toolTip.SetToolTip(this.textColor4, "Change text colour to yellow");
+            this.textColor4.UseVisualStyleBackColor = false;
+            this.textColor4.Click += new System.EventHandler(this.TextColorBtn_Click);
+            // 
+            // textColor3
+            // 
+            this.textColor3.BackColor = System.Drawing.Color.Blue;
+            this.textColor3.Location = new System.Drawing.Point(1224, 648);
+            this.textColor3.Margin = new System.Windows.Forms.Padding(4);
+            this.textColor3.Name = "textColor3";
+            this.textColor3.Size = new System.Drawing.Size(68, 54);
+            this.textColor3.TabIndex = 19;
+            this.toolTip.SetToolTip(this.textColor3, "Change text colour to blue");
+            this.textColor3.UseVisualStyleBackColor = false;
+            this.textColor3.Click += new System.EventHandler(this.TextColorBtn_Click);
+            // 
+            // textColor2
+            // 
+            this.textColor2.BackColor = System.Drawing.Color.Red;
+            this.textColor2.Location = new System.Drawing.Point(1152, 648);
+            this.textColor2.Margin = new System.Windows.Forms.Padding(4);
+            this.textColor2.Name = "textColor2";
+            this.textColor2.Size = new System.Drawing.Size(68, 54);
+            this.textColor2.TabIndex = 18;
+            this.toolTip.SetToolTip(this.textColor2, "Change text colour to red");
+            this.textColor2.UseVisualStyleBackColor = false;
+            this.textColor2.Click += new System.EventHandler(this.TextColorBtn_Click);
+            // 
+            // textColor1
+            // 
+            this.textColor1.BackColor = System.Drawing.Color.White;
+            this.textColor1.Location = new System.Drawing.Point(1078, 648);
+            this.textColor1.Margin = new System.Windows.Forms.Padding(4);
+            this.textColor1.Name = "textColor1";
+            this.textColor1.Size = new System.Drawing.Size(68, 54);
+            this.textColor1.TabIndex = 17;
+            this.toolTip.SetToolTip(this.textColor1, "Change text colour to white.");
+            this.textColor1.UseVisualStyleBackColor = false;
+            this.textColor1.Click += new System.EventHandler(this.TextColorBtn_Click);
+            // 
+            // backColor6
+            // 
+            this.backColor6.BackColor = System.Drawing.Color.Black;
+            this.backColor6.Location = new System.Drawing.Point(1444, 536);
+            this.backColor6.Margin = new System.Windows.Forms.Padding(4);
+            this.backColor6.Name = "backColor6";
+            this.backColor6.Size = new System.Drawing.Size(68, 54);
+            this.backColor6.TabIndex = 16;
+            this.toolTip.SetToolTip(this.backColor6, "Change background colour to black");
+            this.backColor6.UseVisualStyleBackColor = false;
+            this.backColor6.Click += new System.EventHandler(this.BackColorBtn_Click);
+            // 
+            // backColor5
+            // 
+            this.backColor5.BackColor = System.Drawing.Color.Green;
+            this.backColor5.Location = new System.Drawing.Point(1370, 536);
+            this.backColor5.Margin = new System.Windows.Forms.Padding(4);
+            this.backColor5.Name = "backColor5";
+            this.backColor5.Size = new System.Drawing.Size(68, 54);
+            this.backColor5.TabIndex = 15;
+            this.toolTip.SetToolTip(this.backColor5, "Change background colour to green");
+            this.backColor5.UseVisualStyleBackColor = false;
+            this.backColor5.Click += new System.EventHandler(this.BackColorBtn_Click);
+            // 
+            // backColor4
+            // 
+            this.backColor4.BackColor = System.Drawing.Color.Yellow;
+            this.backColor4.Location = new System.Drawing.Point(1296, 536);
+            this.backColor4.Margin = new System.Windows.Forms.Padding(4);
+            this.backColor4.Name = "backColor4";
+            this.backColor4.Size = new System.Drawing.Size(68, 54);
+            this.backColor4.TabIndex = 14;
+            this.toolTip.SetToolTip(this.backColor4, "Change background colour to yellow");
+            this.backColor4.UseVisualStyleBackColor = false;
+            this.backColor4.Click += new System.EventHandler(this.BackColorBtn_Click);
+            // 
+            // backColor3
+            // 
+            this.backColor3.BackColor = System.Drawing.Color.Blue;
+            this.backColor3.Location = new System.Drawing.Point(1224, 536);
+            this.backColor3.Margin = new System.Windows.Forms.Padding(4);
+            this.backColor3.Name = "backColor3";
+            this.backColor3.Size = new System.Drawing.Size(68, 54);
+            this.backColor3.TabIndex = 13;
+            this.toolTip.SetToolTip(this.backColor3, "Change background colour to blue");
+            this.backColor3.UseVisualStyleBackColor = false;
+            this.backColor3.Click += new System.EventHandler(this.BackColorBtn_Click);
+            // 
+            // backColor2
+            // 
+            this.backColor2.BackColor = System.Drawing.Color.Red;
+            this.backColor2.Location = new System.Drawing.Point(1152, 536);
+            this.backColor2.Margin = new System.Windows.Forms.Padding(4);
+            this.backColor2.Name = "backColor2";
+            this.backColor2.Size = new System.Drawing.Size(68, 54);
+            this.backColor2.TabIndex = 12;
+            this.toolTip.SetToolTip(this.backColor2, "Change background colour to red");
+            this.backColor2.UseVisualStyleBackColor = false;
+            this.backColor2.Click += new System.EventHandler(this.BackColorBtn_Click);
+            // 
+            // backColor1
+            // 
+            this.backColor1.BackColor = System.Drawing.Color.White;
+            this.backColor1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backColor1.Location = new System.Drawing.Point(1078, 536);
+            this.backColor1.Margin = new System.Windows.Forms.Padding(4);
+            this.backColor1.Name = "backColor1";
+            this.backColor1.Size = new System.Drawing.Size(68, 54);
+            this.backColor1.TabIndex = 11;
+            this.toolTip.SetToolTip(this.backColor1, "Change background colour to white.");
+            this.backColor1.UseVisualStyleBackColor = false;
+            this.backColor1.Click += new System.EventHandler(this.BackColorBtn_Click);
+            // 
+            // textColorLabel
+            // 
+            this.textColorLabel.AutoSize = true;
+            this.textColorLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textColorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.textColorLabel.Location = new System.Drawing.Point(1072, 607);
+            this.textColorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.textColorLabel.Name = "textColorLabel";
+            this.textColorLabel.Size = new System.Drawing.Size(307, 37);
+            this.textColorLabel.TabIndex = 7;
+            this.textColorLabel.Text = "Choose text colour";
+            // 
+            // backColorLabel
+            // 
+            this.backColorLabel.AutoSize = true;
+            this.backColorLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backColorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.backColorLabel.Location = new System.Drawing.Point(1068, 498);
+            this.backColorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.backColorLabel.Name = "backColorLabel";
+            this.backColorLabel.Size = new System.Drawing.Size(436, 37);
+            this.backColorLabel.TabIndex = 6;
+            this.backColorLabel.Text = "Choose background colour";
             // 
             // helpBtnTextEditor
             // 
@@ -1369,7 +1629,7 @@
             this.helpBtnTextEditor.TabIndex = 36;
             this.helpBtnTextEditor.UseCompatibleTextRendering = true;
             this.helpBtnTextEditor.UseVisualStyleBackColor = false;
-            this.helpBtnTextEditor.Click += new System.EventHandler(this.helpBtnTextEditor_Click);
+            this.helpBtnTextEditor.Click += new System.EventHandler(this.HelpBtnTextEditor_Click);
             // 
             // helpPanelTexteditor
             // 
@@ -1401,7 +1661,7 @@
             this.btnCloseHelpText.TabIndex = 35;
             this.btnCloseHelpText.Text = "Close help";
             this.btnCloseHelpText.UseVisualStyleBackColor = false;
-            this.btnCloseHelpText.Click += new System.EventHandler(this.btnCloseHelpText_Click);
+            this.btnCloseHelpText.Click += new System.EventHandler(this.BtnCloseHelpText_Click);
             // 
             // label15
             // 
@@ -1479,17 +1739,17 @@
             this.pictureBox14.TabIndex = 32;
             this.pictureBox14.TabStop = false;
             // 
-            // label3
+            // storyLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label3.Location = new System.Drawing.Point(32, 25);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(713, 87);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Let\'s write a story!";
+            this.storyLabel.AutoSize = true;
+            this.storyLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.storyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.storyLabel.Location = new System.Drawing.Point(32, 25);
+            this.storyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.storyLabel.Name = "storyLabel";
+            this.storyLabel.Size = new System.Drawing.Size(713, 87);
+            this.storyLabel.TabIndex = 28;
+            this.storyLabel.Text = "Let\'s write a story!";
             // 
             // btnUndo
             // 
@@ -1503,7 +1763,7 @@
             this.btnUndo.TabIndex = 27;
             this.btnUndo.Text = "Undo";
             this.btnUndo.UseVisualStyleBackColor = false;
-            this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
+            this.btnUndo.Click += new System.EventHandler(this.BtnUndo_Click);
             // 
             // btnRedo
             // 
@@ -1517,22 +1777,7 @@
             this.btnRedo.TabIndex = 26;
             this.btnRedo.Text = "Redo";
             this.btnRedo.UseVisualStyleBackColor = false;
-            this.btnRedo.Click += new System.EventHandler(this.btnRedo_Click);
-            // 
-            // btnRandomStyle
-            // 
-            this.btnRandomStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.btnRandomStyle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRandomStyle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
-            this.btnRandomStyle.ForeColor = System.Drawing.Color.White;
-            this.btnRandomStyle.Location = new System.Drawing.Point(1080, 731);
-            this.btnRandomStyle.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRandomStyle.Name = "btnRandomStyle";
-            this.btnRandomStyle.Size = new System.Drawing.Size(432, 58);
-            this.btnRandomStyle.TabIndex = 25;
-            this.btnRandomStyle.Text = "Random Style";
-            this.btnRandomStyle.UseVisualStyleBackColor = false;
-            this.btnRandomStyle.Click += new System.EventHandler(this.btnRandomStyle_Click);
+            this.btnRedo.Click += new System.EventHandler(this.BtnRedo_Click);
             // 
             // btnWritingPrompt
             // 
@@ -1545,8 +1790,10 @@
             this.btnWritingPrompt.Size = new System.Drawing.Size(170, 58);
             this.btnWritingPrompt.TabIndex = 24;
             this.btnWritingPrompt.Text = "Get idea";
+            this.toolTip.SetToolTip(this.btnWritingPrompt, "Fill the text box with an idea to start your story. This deletes everything in th" +
+        "e text box so save your work first.");
             this.btnWritingPrompt.UseVisualStyleBackColor = false;
-            this.btnWritingPrompt.Click += new System.EventHandler(this.btnWritingPrompt_Click);
+            this.btnWritingPrompt.Click += new System.EventHandler(this.BtnWritingPrompt_Click);
             // 
             // richTextBox
             // 
@@ -1557,8 +1804,8 @@
             this.richTextBox.Size = new System.Drawing.Size(966, 585);
             this.richTextBox.TabIndex = 4;
             this.richTextBox.Text = "Write something here and change the font, size and colours.";
-            this.richTextBox.TextChanged += new System.EventHandler(this.richTextBox_TextChanged);
-            this.richTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.richTextBox_KeyDown);
+            this.richTextBox.TextChanged += new System.EventHandler(this.RichTextBox_TextChanged);
+            this.richTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RichTextBox_KeyDown);
             // 
             // btnOpenFile
             // 
@@ -1572,8 +1819,9 @@
             this.btnOpenFile.Size = new System.Drawing.Size(170, 58);
             this.btnOpenFile.TabIndex = 23;
             this.btnOpenFile.Text = "Open file";
+            this.toolTip.SetToolTip(this.btnOpenFile, "Open a saved file");
             this.btnOpenFile.UseVisualStyleBackColor = false;
-            this.btnOpenFile.Click += new System.EventHandler(this.btnOpenFile_Click);
+            this.btnOpenFile.Click += new System.EventHandler(this.BtnOpenFile_Click);
             // 
             // btnSave
             // 
@@ -1586,141 +1834,10 @@
             this.btnSave.Size = new System.Drawing.Size(170, 58);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
+            this.toolTip.SetToolTip(this.btnSave, "Save your work as a .rtf to save the style and writing (background colour does no" +
+        "t save)");
             this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // textColor6
-            // 
-            this.textColor6.BackColor = System.Drawing.Color.Black;
-            this.textColor6.Location = new System.Drawing.Point(1444, 648);
-            this.textColor6.Margin = new System.Windows.Forms.Padding(4);
-            this.textColor6.Name = "textColor6";
-            this.textColor6.Size = new System.Drawing.Size(68, 54);
-            this.textColor6.TabIndex = 22;
-            this.textColor6.UseVisualStyleBackColor = false;
-            this.textColor6.Click += new System.EventHandler(this.textColor6_Click);
-            // 
-            // textColor5
-            // 
-            this.textColor5.BackColor = System.Drawing.Color.Green;
-            this.textColor5.Location = new System.Drawing.Point(1370, 648);
-            this.textColor5.Margin = new System.Windows.Forms.Padding(4);
-            this.textColor5.Name = "textColor5";
-            this.textColor5.Size = new System.Drawing.Size(68, 54);
-            this.textColor5.TabIndex = 21;
-            this.textColor5.UseVisualStyleBackColor = false;
-            this.textColor5.Click += new System.EventHandler(this.textColor5_Click);
-            // 
-            // textColor4
-            // 
-            this.textColor4.BackColor = System.Drawing.Color.Yellow;
-            this.textColor4.Location = new System.Drawing.Point(1296, 648);
-            this.textColor4.Margin = new System.Windows.Forms.Padding(4);
-            this.textColor4.Name = "textColor4";
-            this.textColor4.Size = new System.Drawing.Size(68, 54);
-            this.textColor4.TabIndex = 20;
-            this.textColor4.UseVisualStyleBackColor = false;
-            this.textColor4.Click += new System.EventHandler(this.textColor4_Click);
-            // 
-            // textColor3
-            // 
-            this.textColor3.BackColor = System.Drawing.Color.Blue;
-            this.textColor3.Location = new System.Drawing.Point(1224, 648);
-            this.textColor3.Margin = new System.Windows.Forms.Padding(4);
-            this.textColor3.Name = "textColor3";
-            this.textColor3.Size = new System.Drawing.Size(68, 54);
-            this.textColor3.TabIndex = 19;
-            this.textColor3.UseVisualStyleBackColor = false;
-            this.textColor3.Click += new System.EventHandler(this.textColor3_Click);
-            // 
-            // textColor2
-            // 
-            this.textColor2.BackColor = System.Drawing.Color.Red;
-            this.textColor2.Location = new System.Drawing.Point(1152, 648);
-            this.textColor2.Margin = new System.Windows.Forms.Padding(4);
-            this.textColor2.Name = "textColor2";
-            this.textColor2.Size = new System.Drawing.Size(68, 54);
-            this.textColor2.TabIndex = 18;
-            this.textColor2.UseVisualStyleBackColor = false;
-            this.textColor2.Click += new System.EventHandler(this.textColor2_Click);
-            // 
-            // textColor1
-            // 
-            this.textColor1.BackColor = System.Drawing.Color.White;
-            this.textColor1.Location = new System.Drawing.Point(1078, 648);
-            this.textColor1.Margin = new System.Windows.Forms.Padding(4);
-            this.textColor1.Name = "textColor1";
-            this.textColor1.Size = new System.Drawing.Size(68, 54);
-            this.textColor1.TabIndex = 17;
-            this.textColor1.UseVisualStyleBackColor = false;
-            this.textColor1.Click += new System.EventHandler(this.textColor1_Click);
-            // 
-            // backColor6
-            // 
-            this.backColor6.BackColor = System.Drawing.Color.Black;
-            this.backColor6.Location = new System.Drawing.Point(1444, 536);
-            this.backColor6.Margin = new System.Windows.Forms.Padding(4);
-            this.backColor6.Name = "backColor6";
-            this.backColor6.Size = new System.Drawing.Size(68, 54);
-            this.backColor6.TabIndex = 16;
-            this.backColor6.UseVisualStyleBackColor = false;
-            this.backColor6.Click += new System.EventHandler(this.backColor6_Click);
-            // 
-            // backColor5
-            // 
-            this.backColor5.BackColor = System.Drawing.Color.Green;
-            this.backColor5.Location = new System.Drawing.Point(1370, 536);
-            this.backColor5.Margin = new System.Windows.Forms.Padding(4);
-            this.backColor5.Name = "backColor5";
-            this.backColor5.Size = new System.Drawing.Size(68, 54);
-            this.backColor5.TabIndex = 15;
-            this.backColor5.UseVisualStyleBackColor = false;
-            this.backColor5.Click += new System.EventHandler(this.backColor5_Click);
-            // 
-            // backColor4
-            // 
-            this.backColor4.BackColor = System.Drawing.Color.Yellow;
-            this.backColor4.Location = new System.Drawing.Point(1296, 536);
-            this.backColor4.Margin = new System.Windows.Forms.Padding(4);
-            this.backColor4.Name = "backColor4";
-            this.backColor4.Size = new System.Drawing.Size(68, 54);
-            this.backColor4.TabIndex = 14;
-            this.backColor4.UseVisualStyleBackColor = false;
-            this.backColor4.Click += new System.EventHandler(this.backColor4_Click);
-            // 
-            // backColor3
-            // 
-            this.backColor3.BackColor = System.Drawing.Color.Blue;
-            this.backColor3.Location = new System.Drawing.Point(1224, 536);
-            this.backColor3.Margin = new System.Windows.Forms.Padding(4);
-            this.backColor3.Name = "backColor3";
-            this.backColor3.Size = new System.Drawing.Size(68, 54);
-            this.backColor3.TabIndex = 13;
-            this.backColor3.UseVisualStyleBackColor = false;
-            this.backColor3.Click += new System.EventHandler(this.backColor3_Click);
-            // 
-            // backColor2
-            // 
-            this.backColor2.BackColor = System.Drawing.Color.Red;
-            this.backColor2.Location = new System.Drawing.Point(1152, 536);
-            this.backColor2.Margin = new System.Windows.Forms.Padding(4);
-            this.backColor2.Name = "backColor2";
-            this.backColor2.Size = new System.Drawing.Size(68, 54);
-            this.backColor2.TabIndex = 12;
-            this.backColor2.UseVisualStyleBackColor = false;
-            this.backColor2.Click += new System.EventHandler(this.backColor2_Click);
-            // 
-            // backColor1
-            // 
-            this.backColor1.BackColor = System.Drawing.Color.White;
-            this.backColor1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backColor1.Location = new System.Drawing.Point(1078, 536);
-            this.backColor1.Margin = new System.Windows.Forms.Padding(4);
-            this.backColor1.Name = "backColor1";
-            this.backColor1.Size = new System.Drawing.Size(68, 54);
-            this.backColor1.TabIndex = 11;
-            this.backColor1.UseVisualStyleBackColor = false;
-            this.backColor1.Click += new System.EventHandler(this.backColor1_Click);
+            this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // trackBar1
             // 
@@ -1732,56 +1849,33 @@
             this.trackBar1.Size = new System.Drawing.Size(418, 90);
             this.trackBar1.TabIndex = 10;
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.toolTip.SetToolTip(this.trackBar1, "Move the bar to change the size of the text");
             this.trackBar1.Value = 12;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.trackBar1.Scroll += new System.EventHandler(this.TrackBar1_Scroll);
             // 
-            // label7
+            // textSizeLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label7.Location = new System.Drawing.Point(1074, 397);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(270, 37);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Choose text size";
+            this.textSizeLabel.AutoSize = true;
+            this.textSizeLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSizeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.textSizeLabel.Location = new System.Drawing.Point(1074, 397);
+            this.textSizeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.textSizeLabel.Name = "textSizeLabel";
+            this.textSizeLabel.Size = new System.Drawing.Size(270, 37);
+            this.textSizeLabel.TabIndex = 8;
+            this.textSizeLabel.Text = "Choose text size";
             // 
-            // label6
+            // fontLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label6.Location = new System.Drawing.Point(1072, 607);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(307, 37);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Choose text colour";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label5.Location = new System.Drawing.Point(1068, 498);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(436, 37);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Choose background colour";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
-            this.label4.Location = new System.Drawing.Point(1074, 131);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(202, 37);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Choose font";
+            this.fontLabel.AutoSize = true;
+            this.fontLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fontLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.fontLabel.Location = new System.Drawing.Point(1074, 131);
+            this.fontLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.fontLabel.Name = "fontLabel";
+            this.fontLabel.Size = new System.Drawing.Size(202, 37);
+            this.fontLabel.TabIndex = 4;
+            this.fontLabel.Text = "Choose font";
             // 
             // fontList
             // 
@@ -1804,36 +1898,325 @@
             this.fontList.Name = "fontList";
             this.fontList.Size = new System.Drawing.Size(418, 204);
             this.fontList.TabIndex = 3;
-            this.fontList.SelectedIndexChanged += new System.EventHandler(this.fontList_SelectedIndexChanged);
+            this.toolTip.SetToolTip(this.fontList, "Change the style of the text");
+            this.fontList.SelectedIndexChanged += new System.EventHandler(this.FontList_SelectedIndexChanged);
+            // 
+            // settings
+            // 
+            this.settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.settings.Controls.Add(this.parentSettingsGroupBox);
+            this.settings.Controls.Add(this.creditsGroupBox);
+            this.settings.Controls.Add(this.pictureBox15);
+            this.settings.Controls.Add(this.label3);
+            this.settings.Controls.Add(this.btnClearBrowser);
+            this.settings.Controls.Add(this.btnWarningNo);
+            this.settings.Controls.Add(this.btnWarningYes);
+            this.settings.Controls.Add(this.WritingWarninglabel);
+            this.settings.Controls.Add(this.btnHard);
+            this.settings.Controls.Add(this.btnEasy);
+            this.settings.Controls.Add(this.difficultyLabel);
+            this.settings.Controls.Add(this.darkMode);
+            this.settings.Controls.Add(this.settingsLabel);
+            this.settings.Location = new System.Drawing.Point(8, 39);
+            this.settings.Name = "settings";
+            this.settings.Size = new System.Drawing.Size(1586, 841);
+            this.settings.TabIndex = 4;
+            this.settings.Text = "Settings";
+            // 
+            // parentSettingsGroupBox
+            // 
+            this.parentSettingsGroupBox.Controls.Add(this.pictureBoxPadlock);
+            this.parentSettingsGroupBox.Controls.Add(this.labelControlsLocked);
+            this.parentSettingsGroupBox.Controls.Add(this.btnParentalControlOn);
+            this.parentSettingsGroupBox.Controls.Add(this.btnSetUpParentalControl);
+            this.parentSettingsGroupBox.Controls.Add(this.btnParentalControlOff);
+            this.parentSettingsGroupBox.Controls.Add(this.parentalControlsLabel);
+            this.parentSettingsGroupBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parentSettingsGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.parentSettingsGroupBox.Location = new System.Drawing.Point(47, 427);
+            this.parentSettingsGroupBox.Name = "parentSettingsGroupBox";
+            this.parentSettingsGroupBox.Size = new System.Drawing.Size(1206, 252);
+            this.parentSettingsGroupBox.TabIndex = 47;
+            this.parentSettingsGroupBox.TabStop = false;
+            this.parentSettingsGroupBox.Text = "Parent Settings";
+            // 
+            // pictureBoxPadlock
+            // 
+            this.pictureBoxPadlock.Image = global::TermOneProjectCardiffMet.Properties.Resources.locked_padlock;
+            this.pictureBoxPadlock.Location = new System.Drawing.Point(865, 98);
+            this.pictureBoxPadlock.Name = "pictureBoxPadlock";
+            this.pictureBoxPadlock.Size = new System.Drawing.Size(116, 135);
+            this.pictureBoxPadlock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxPadlock.TabIndex = 40;
+            this.pictureBoxPadlock.TabStop = false;
+            this.toolTip.SetToolTip(this.pictureBoxPadlock, "Parent settings are locked.");
+            this.pictureBoxPadlock.Click += new System.EventHandler(this.PictureBoxPadlock_Click);
+            // 
+            // labelControlsLocked
+            // 
+            this.labelControlsLocked.AutoSize = true;
+            this.labelControlsLocked.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.labelControlsLocked.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.labelControlsLocked.Location = new System.Drawing.Point(397, 41);
+            this.labelControlsLocked.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelControlsLocked.Name = "labelControlsLocked";
+            this.labelControlsLocked.Size = new System.Drawing.Size(363, 32);
+            this.labelControlsLocked.TabIndex = 39;
+            this.labelControlsLocked.Text = "These controls are locked.";
+            // 
+            // btnParentalControlOn
+            // 
+            this.btnParentalControlOn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnParentalControlOn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnParentalControlOn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.btnParentalControlOn.ForeColor = System.Drawing.Color.Black;
+            this.btnParentalControlOn.Location = new System.Drawing.Point(605, 98);
+            this.btnParentalControlOn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnParentalControlOn.Name = "btnParentalControlOn";
+            this.btnParentalControlOn.Size = new System.Drawing.Size(187, 56);
+            this.btnParentalControlOn.TabIndex = 37;
+            this.btnParentalControlOn.Text = "On";
+            this.toolTip.SetToolTip(this.btnParentalControlOn, "Turn on parental controls");
+            this.btnParentalControlOn.UseVisualStyleBackColor = false;
+            this.btnParentalControlOn.Click += new System.EventHandler(this.BtnParentalControlOn_Click);
+            // 
+            // btnSetUpParentalControl
+            // 
+            this.btnSetUpParentalControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(240)))));
+            this.btnSetUpParentalControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetUpParentalControl.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.btnSetUpParentalControl.ForeColor = System.Drawing.Color.Black;
+            this.btnSetUpParentalControl.Location = new System.Drawing.Point(399, 177);
+            this.btnSetUpParentalControl.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSetUpParentalControl.Name = "btnSetUpParentalControl";
+            this.btnSetUpParentalControl.Size = new System.Drawing.Size(393, 56);
+            this.btnSetUpParentalControl.TabIndex = 38;
+            this.btnSetUpParentalControl.Text = "Set up parental controls";
+            this.btnSetUpParentalControl.UseVisualStyleBackColor = false;
+            this.btnSetUpParentalControl.Click += new System.EventHandler(this.BtnSetUpParentalControl_Click);
+            // 
+            // btnParentalControlOff
+            // 
+            this.btnParentalControlOff.AutoSize = true;
+            this.btnParentalControlOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(192)))), ((int)(((byte)(72)))));
+            this.btnParentalControlOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnParentalControlOff.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.btnParentalControlOff.ForeColor = System.Drawing.Color.Black;
+            this.btnParentalControlOff.Location = new System.Drawing.Point(399, 98);
+            this.btnParentalControlOff.Margin = new System.Windows.Forms.Padding(4);
+            this.btnParentalControlOff.Name = "btnParentalControlOff";
+            this.btnParentalControlOff.Size = new System.Drawing.Size(187, 56);
+            this.btnParentalControlOff.TabIndex = 36;
+            this.btnParentalControlOff.Text = "Off";
+            this.toolTip.SetToolTip(this.btnParentalControlOff, "Turn off parental controls");
+            this.btnParentalControlOff.UseVisualStyleBackColor = false;
+            this.btnParentalControlOff.Click += new System.EventHandler(this.BtnParentalControlOff_Click);
+            // 
+            // parentalControlsLabel
+            // 
+            this.parentalControlsLabel.AutoSize = true;
+            this.parentalControlsLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.parentalControlsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.parentalControlsLabel.Location = new System.Drawing.Point(133, 110);
+            this.parentalControlsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.parentalControlsLabel.Name = "parentalControlsLabel";
+            this.parentalControlsLabel.Size = new System.Drawing.Size(245, 32);
+            this.parentalControlsLabel.TabIndex = 35;
+            this.parentalControlsLabel.Text = "Parental Controls";
+            // 
+            // creditsGroupBox
+            // 
+            this.creditsGroupBox.Controls.Add(this.creditsLabel);
+            this.creditsGroupBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creditsGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.creditsGroupBox.Location = new System.Drawing.Point(47, 700);
+            this.creditsGroupBox.Name = "creditsGroupBox";
+            this.creditsGroupBox.Size = new System.Drawing.Size(1206, 128);
+            this.creditsGroupBox.TabIndex = 46;
+            this.creditsGroupBox.TabStop = false;
+            this.creditsGroupBox.Text = "Credits";
+            // 
+            // creditsLabel
+            // 
+            this.creditsLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.5F);
+            this.creditsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.creditsLabel.Location = new System.Drawing.Point(16, 35);
+            this.creditsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.creditsLabel.Name = "creditsLabel";
+            this.creditsLabel.Size = new System.Drawing.Size(1170, 90);
+            this.creditsLabel.TabIndex = 31;
+            this.creditsLabel.Text = resources.GetString("creditsLabel.Text");
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Location = new System.Drawing.Point(912, 25);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(341, 366);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 45;
+            this.pictureBox15.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.label3.Location = new System.Drawing.Point(4, 805);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 26);
+            this.label3.TabIndex = 43;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // btnClearBrowser
+            // 
+            this.btnClearBrowser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(240)))));
+            this.btnClearBrowser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearBrowser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.btnClearBrowser.ForeColor = System.Drawing.Color.Black;
+            this.btnClearBrowser.Location = new System.Drawing.Point(446, 159);
+            this.btnClearBrowser.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClearBrowser.Name = "btnClearBrowser";
+            this.btnClearBrowser.Size = new System.Drawing.Size(393, 56);
+            this.btnClearBrowser.TabIndex = 42;
+            this.btnClearBrowser.Text = "Clear browser history";
+            this.toolTip.SetToolTip(this.btnClearBrowser, "Delete the list of websites visited in this session.");
+            this.btnClearBrowser.UseVisualStyleBackColor = false;
+            this.btnClearBrowser.Click += new System.EventHandler(this.BtnClearBrowser_Click);
+            // 
+            // btnWarningNo
+            // 
+            this.btnWarningNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnWarningNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWarningNo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.btnWarningNo.ForeColor = System.Drawing.Color.Black;
+            this.btnWarningNo.Location = new System.Drawing.Point(652, 335);
+            this.btnWarningNo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnWarningNo.Name = "btnWarningNo";
+            this.btnWarningNo.Size = new System.Drawing.Size(187, 56);
+            this.btnWarningNo.TabIndex = 41;
+            this.btnWarningNo.Text = "No";
+            this.toolTip.SetToolTip(this.btnWarningNo, "No warning before story idea goes into text box.");
+            this.btnWarningNo.UseVisualStyleBackColor = false;
+            this.btnWarningNo.Click += new System.EventHandler(this.BtnWarningNo_Click);
+            // 
+            // btnWarningYes
+            // 
+            this.btnWarningYes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(192)))), ((int)(((byte)(72)))));
+            this.btnWarningYes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWarningYes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.btnWarningYes.ForeColor = System.Drawing.Color.Black;
+            this.btnWarningYes.Location = new System.Drawing.Point(446, 335);
+            this.btnWarningYes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnWarningYes.Name = "btnWarningYes";
+            this.btnWarningYes.Size = new System.Drawing.Size(187, 56);
+            this.btnWarningYes.TabIndex = 40;
+            this.btnWarningYes.Text = "Yes";
+            this.toolTip.SetToolTip(this.btnWarningYes, "Gives you a warning when you click \'Get Idea\' on Write a Story, so that you can s" +
+        "ave your work before it is deleted.");
+            this.btnWarningYes.UseVisualStyleBackColor = false;
+            this.btnWarningYes.Click += new System.EventHandler(this.BtnWarningYes_Click);
+            // 
+            // WritingWarninglabel
+            // 
+            this.WritingWarninglabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.WritingWarninglabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.WritingWarninglabel.Location = new System.Drawing.Point(111, 330);
+            this.WritingWarninglabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.WritingWarninglabel.Name = "WritingWarninglabel";
+            this.WritingWarninglabel.Size = new System.Drawing.Size(314, 65);
+            this.WritingWarninglabel.TabIndex = 39;
+            this.WritingWarninglabel.Text = "Warn me if getting a story idea will delete my work";
+            this.WritingWarninglabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // btnHard
+            // 
+            this.btnHard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnHard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHard.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.btnHard.ForeColor = System.Drawing.Color.Black;
+            this.btnHard.Location = new System.Drawing.Point(652, 255);
+            this.btnHard.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHard.Name = "btnHard";
+            this.btnHard.Size = new System.Drawing.Size(187, 56);
+            this.btnHard.TabIndex = 34;
+            this.btnHard.Text = "Hard";
+            this.toolTip.SetToolTip(this.btnHard, "Suggested sums on Play With Numbers are hard");
+            this.btnHard.UseVisualStyleBackColor = false;
+            this.btnHard.Click += new System.EventHandler(this.BtnHard_Click);
+            // 
+            // btnEasy
+            // 
+            this.btnEasy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(192)))), ((int)(((byte)(72)))));
+            this.btnEasy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEasy.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.btnEasy.ForeColor = System.Drawing.Color.Black;
+            this.btnEasy.Location = new System.Drawing.Point(446, 255);
+            this.btnEasy.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEasy.Name = "btnEasy";
+            this.btnEasy.Size = new System.Drawing.Size(187, 56);
+            this.btnEasy.TabIndex = 33;
+            this.btnEasy.Text = "Easy";
+            this.toolTip.SetToolTip(this.btnEasy, "Suggested sums on Play With Numbers are easy");
+            this.btnEasy.UseVisualStyleBackColor = false;
+            this.btnEasy.Click += new System.EventHandler(this.BtnEasy_Click);
+            // 
+            // difficultyLabel
+            // 
+            this.difficultyLabel.AutoSize = true;
+            this.difficultyLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.difficultyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.difficultyLabel.Location = new System.Drawing.Point(217, 267);
+            this.difficultyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.difficultyLabel.Name = "difficultyLabel";
+            this.difficultyLabel.Size = new System.Drawing.Size(208, 32);
+            this.difficultyLabel.TabIndex = 32;
+            this.difficultyLabel.Text = "Sums difficulty";
+            this.difficultyLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // darkMode
+            // 
+            this.darkMode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(240)))));
+            this.darkMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.darkMode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.darkMode.ForeColor = System.Drawing.Color.Black;
+            this.darkMode.Location = new System.Drawing.Point(98, 159);
+            this.darkMode.Margin = new System.Windows.Forms.Padding(4);
+            this.darkMode.Name = "darkMode";
+            this.darkMode.Size = new System.Drawing.Size(327, 56);
+            this.darkMode.TabIndex = 31;
+            this.darkMode.Text = "Turn on dark mode";
+            this.toolTip.SetToolTip(this.darkMode, "Change the colours from blue on yellow to yellow on blue.");
+            this.darkMode.UseVisualStyleBackColor = false;
+            this.darkMode.Click += new System.EventHandler(this.DarkMode_Click);
+            // 
+            // settingsLabel
+            // 
+            this.settingsLabel.AutoSize = true;
+            this.settingsLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(96)))));
+            this.settingsLabel.Location = new System.Drawing.Point(32, 25);
+            this.settingsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.settingsLabel.Name = "settingsLabel";
+            this.settingsLabel.Size = new System.Drawing.Size(339, 87);
+            this.settingsLabel.TabIndex = 29;
+            this.settingsLabel.Text = "Settings";
             // 
             // toolTip
             // 
             this.toolTip.ToolTipTitle = "Help";
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "BackArrow.png");
-            this.imageList1.Images.SetKeyName(1, "ForwardArrow.png");
-            this.imageList1.Images.SetKeyName(2, "history.png");
-            // 
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog1";
             // 
-            // megBubble1
+            // imageList1
             // 
-            this.megBubble1.BackColor = System.Drawing.Color.Transparent;
-            this.megBubble1.Image = global::TermOneProjectCardiffMet.Properties.Resources.megSpeech;
-            this.megBubble1.Location = new System.Drawing.Point(402, 189);
-            this.megBubble1.Margin = new System.Windows.Forms.Padding(6);
-            this.megBubble1.Name = "megBubble1";
-            this.megBubble1.Size = new System.Drawing.Size(671, 152);
-            this.megBubble1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.megBubble1.TabIndex = 25;
-            this.megBubble1.TabStop = false;
-            this.megBubble1.Visible = false;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "locked_padlock.png");
+            this.imageList1.Images.SetKeyName(1, "padlock_unlocked.png");
             // 
             // KidsToolBox
             // 
@@ -1853,6 +2236,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picoBubble1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.megBubble1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.webBrowser.ResumeLayout(false);
@@ -1863,6 +2247,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panelNotAllowed.ResumeLayout(false);
+            this.panelNotAllowed.PerformLayout();
             this.calculator.ResumeLayout(false);
             this.calculator.PerformLayout();
             this.helpPanelCalculator.ResumeLayout(false);
@@ -1880,15 +2266,21 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.textEditor.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.textEditPanel.ResumeLayout(false);
+            this.textEditPanel.PerformLayout();
             this.helpPanelTexteditor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.megBubble1)).EndInit();
+            this.settings.ResumeLayout(false);
+            this.settings.PerformLayout();
+            this.parentSettingsGroupBox.ResumeLayout(false);
+            this.parentSettingsGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPadlock)).EndInit();
+            this.creditsGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1908,11 +2300,10 @@
         private System.Windows.Forms.TextBox webAddressBox;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnGo;
-        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnClearSums;
         private System.Windows.Forms.TextBox calcHistory;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label calculatorLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button calcBtn9;
@@ -1936,14 +2327,14 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.TextBox ideaBox;
         private System.Windows.Forms.Button btnIdeaGenerator;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label calculatorLabel2;
         private System.Windows.Forms.ListBox browserHistory;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.Button btnWriteStory;
         private System.Windows.Forms.Button btnPlayNumbers;
         private System.Windows.Forms.Button btnBrowseWeb;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel textEditPanel;
+        private System.Windows.Forms.Label storyLabel;
         private System.Windows.Forms.Button btnUndo;
         private System.Windows.Forms.Button btnRedo;
         private System.Windows.Forms.Button btnRandomStyle;
@@ -1964,10 +2355,10 @@
         private System.Windows.Forms.Button backColor2;
         private System.Windows.Forms.Button backColor1;
         private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label textSizeLabel;
+        private System.Windows.Forms.Label textColorLabel;
+        private System.Windows.Forms.Label backColorLabel;
+        private System.Windows.Forms.Label fontLabel;
         private System.Windows.Forms.ListBox fontList;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -2008,10 +2399,34 @@
         private System.Windows.Forms.Label picoSpeech1;
         private System.Windows.Forms.PictureBox picoBubble1;
         private System.Windows.Forms.Label megSpeech1;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label welcomeLabel3;
         private System.Windows.Forms.Button btnHelpWelcome;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label welcomeLabel2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox megBubble1;
+        private System.Windows.Forms.TabPage settings;
+        private System.Windows.Forms.Label settingsLabel;
+        private System.Windows.Forms.Button darkMode;
+        private System.Windows.Forms.Button btnHard;
+        private System.Windows.Forms.Button btnEasy;
+        private System.Windows.Forms.Label difficultyLabel;
+        private System.Windows.Forms.Button btnSetUpParentalControl;
+        private System.Windows.Forms.Button btnParentalControlOn;
+        private System.Windows.Forms.Button btnParentalControlOff;
+        private System.Windows.Forms.Label parentalControlsLabel;
+        private System.Windows.Forms.Button btnWarningNo;
+        private System.Windows.Forms.Button btnWarningYes;
+        private System.Windows.Forms.Label WritingWarninglabel;
+        private System.Windows.Forms.Button btnClearBrowser;
+        private System.Windows.Forms.Panel panelNotAllowed;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox creditsGroupBox;
+        private System.Windows.Forms.Label creditsLabel;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox parentSettingsGroupBox;
+        private System.Windows.Forms.PictureBox pictureBoxPadlock;
+        private System.Windows.Forms.Label labelControlsLocked;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
