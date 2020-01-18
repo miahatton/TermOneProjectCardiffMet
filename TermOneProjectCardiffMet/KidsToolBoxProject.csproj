@@ -7,7 +7,7 @@
     <ProjectGuid>{29C5C085-5551-45F8-BB77-C52D6AB2A122}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>TermOneProjectCardiffMet</RootNamespace>
-    <AssemblyName>TermOneProjectCardiffMet</AssemblyName>
+    <AssemblyName>KidsToolBox</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -30,6 +30,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>toolboxicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -164,6 +167,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\padlock_unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="toolboxicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
